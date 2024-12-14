@@ -27,7 +27,7 @@
     {
         "about_me": "I am a 40 year old healthcare professional planning for my children's education.\nI am risk-averse and prefer stable investment options.\nAre bonds or fixed-income securities suitable for my investment goals?",
         "context": "Fluctuations in interest rates impact bond prices and yields.\nGovernment bonds provide relative stability during market uncertainty.\nImportance of assessing investment time horizon and diversification.",
-        "response": "\nBased on your risk-averse nature and investment goals, bonds and fixed-income securities may be suitable for you. Government bonds can provide stability during market uncertainty, but it's important to assess your investment time horizon and diversify your portfolio to mitigate risk. Consider a mix of short-term and long-term bonds for a balanced approach."
+        "response": "\nBased on your risk-averse nature and investment goals, bonds and fixed-income securities may be suitable for you. Government bonds can provide stability during market uncertainty, but it's important to assess your investment time horizon and diversify your portfolio to mitigate risk. Consider a mix of short-term and long-term bonds to balance potential fluctuations in interest rates."
     },
     {
         "about_me": "I am a 31 year old teacher looking to supplement my income through investments.\nI'm interested in real estate but have limited knowledge in this area.\nShould I consider real estate investment trusts (REITs)?",
@@ -72,12 +72,12 @@
     {
         "about_me": "I am a 35 year old parent, and I want to secure my child's future education.\nHow can I invest effectively to cover education expenses?",
         "context": "529 savings plans offer tax advantages for education-related expenses.\nImportance of starting early to benefit from compounding growth.\nConsideration of the investment options within the 529 plan and their risk profiles.",
-        "response": "\nMy advice would be to consider investing in a diversified portfolio of low-cost index funds within a 529 savings plan. This will provide tax advantages and the potential for long-term growth through compounding. It is important to start early and regularly contribute to take advantage of the power of compounding. Additionally, consider the risk profiles of the investment options within the 529 plan and choose a mix that aligns with your risk tolerance and time horizon. This approach can help secure your child's future education expenses"
+        "response": "\nMy advice would be to consider investing in a diversified portfolio of low-risk options within a 529 savings plan. Starting early and taking advantage of compounding growth can help secure your child's future education expenses. Additionally, keeping an eye on market news and adjusting your investments accordingly can help mitigate risk."
     },
     {
         "about_me": "I am a 28 year old marketing professional.\nI'm interested in diversifying my investment portfolio.\nWhat are your thoughts on investing in Bitcoin?",
         "context": "Bitcoin experiences 15% price drop in the last week.\nElon Musk tweets about the environmental concerns of Bitcoin mining.\nThe Federal Reserve announces interest rate hike.",
-        "response": "\nBased on the recent news, I would advise against investing in Bitcoin at this time. The 15% price drop and concerns about environmental impact from mining, combined with the potential for an interest rate hike, make it a risky investment. Consider diversifying into other assets."
+        "response": "\nBased on the recent news, I would advise against investing in Bitcoin at this time. The price drop and concerns about environmental impact, coupled with the potential for an interest rate hike, make it a risky investment. Consider diversifying into other assets."
     },
     {
         "about_me": "I am a 45 year old small business owner.\nI have some extra funds and I'm considering investing in tech stocks.\nWhat do you think about Amazon's future prospects?",
@@ -92,7 +92,7 @@
     {
         "about_me": "I am a 50 year old retiree.\nI want to ensure a stable income through my investments.\nDo you think dividend stocks are a good option at this time?",
         "context": "Several blue-chip companies announce dividend cuts.\nMarket analysts predict increased market volatility.\nThe Federal Reserve hints at continuing low interest rates.",
-        "response": "\nBased on the current market conditions and news, dividend stocks may not be the best option for stable income. With companies announcing dividend cuts and increased market volatility, it may be better to diversify your portfolio with a mix of dividend and growth stocks. Additionally, the Federal Reserve's indication of low interest rates may make it more challenging for dividend stocks to provide significant returns. Consider consulting with a financial advisor for personalized advice."
+        "response": "\nBased on the current market conditions and news, dividend stocks may not be the best option for stable income. With companies announcing dividend cuts and increased market volatility, it may be better to diversify your portfolio with a mix of stocks and bonds. Additionally, the Federal Reserve's indication of low interest rates may make dividend stocks less attractive. Consider consulting with a financial advisor for personalized advice."
     },
     {
         "about_me": "I am a 29 year old medical student.\nI want to start investing but I'm concerned about market risks.\nWhat's your take on stablecoins in the cryptocurrency market?",
@@ -102,7 +102,7 @@
     {
         "about_me": "I am a 32 year old marketing manager.\nI've been following the electric vehicle industry closely.\nDo you think it's a good idea to invest in a diverse EV portfolio?",
         "context": "New government incentives announced for electric vehicle adoption.\nBattery technology breakthrough reported by a leading research institute.\nRising competition in the EV market leads to price wars.",
-        "response": "\nBased on the news provided, it seems like the electric vehicle industry is experiencing significant growth and potential. Investing in a diverse EV portfolio could be a good idea, as it allows for exposure to different companies and technologies. However, it is important to carefully research and choose companies with strong fundamentals and competitive advantages. Additionally, keeping an eye on government incentives and technological advancements can help inform investment decisions."
+        "response": "\nBased on the news provided, it seems like the electric vehicle industry is experiencing significant growth and potential. Investing in a diverse EV portfolio could be a good idea, as it allows for exposure to different companies and technologies. However, it is important to carefully research and choose companies with strong fundamentals and competitive advantages. Additionally, keep an eye on the government incentives and battery technology breakthroughs, as they could further boost the industry. Be cautious of potential price wars and monitor competition closely."
     },
     {
         "about_me": "I am a 40 year old real estate agent.\nI'm looking to invest some savings in the financial markets.\nWhat's your opinion on gold as a safe-haven investment?",
@@ -142,7 +142,7 @@
     {
         "about_me": "I am a 48 year old pharmacist.\nI'm concerned about healthcare industry fluctuations.\nDo you think investing in pharmaceutical stocks is a wise decision?",
         "context": "Pharmaceutical companies announce breakthroughs in COVID-19 treatments.\nRegulatory agencies scrutinize drug pricing policies.\nMarket volatility increases due to uncertainties related to healthcare reforms.",
-        "response": "\nBased on the current news and market volatility, investing in pharmaceutical stocks may not be the wisest decision. While there have been breakthroughs in COVID-19 treatments, regulatory scrutiny and uncertainties related to healthcare reforms can lead to fluctuations in the industry. It may be better to diversify your investments in other sectors to mitigate risk."
+        "response": "\nBased on the current news and market volatility, investing in pharmaceutical stocks may not be the wisest decision. While there have been breakthroughs in COVID-19 treatments, regulatory scrutiny and uncertainties related to healthcare reforms could lead to fluctuations in the industry. It may be better to diversify your investments in other sectors to mitigate risk."
     },
     {
         "about_me": "I am a 30 year old graphic designer.\nI want to invest in something with potential for high returns.\nWhat's your opinion on investing in startup companies?",
@@ -152,7 +152,7 @@
     {
         "about_me": "I am a 36 year old nurse.\nI'm looking for low-risk investments to supplement my income.\nWhat do you think about investing in government bonds?",
         "context": "Government bond yields remain relatively stable in recent months.\nInflation concerns lead to discussions about potential interest rate hikes.\nCentral banks employ bond-buying programs to stimulate economic recovery.",
-        "response": "\nBased on the current market conditions, investing in government bonds may be a good option for low-risk investments. The stable yields and central bank bond-buying programs suggest a relatively safe investment. However, keep an eye on potential interest rate hikes due to inflation concerns. Diversifying your portfolio with a mix of stocks and bonds may be a wise decision."
+        "response": "\nBased on the current market conditions, investing in government bonds may be a good option for low-risk investments. The stable yields and central bank bond-buying programs suggest a favorable environment for bond investments. However, keep an eye on potential interest rate hikes due to inflation concerns. Diversifying your portfolio with a mix of stocks and bonds may be a wise approach."
     },
     {
         "about_me": "I'm a 42 year old accountant.\nI'm interested in diversifying my investment portfolio.\nWhat are your thoughts on investing in technology stocks?",
@@ -487,7 +487,7 @@
     {
         "about_me": "I'm a 27 year old investor.\nI'm interested in growth investments with a long-term horizon.\nHow do you view the potential of Southeast Asian markets?",
         "context": "Southeast Asian economies benefit from rising consumer demand and regional integration.",
-        "response": "\nBased on the current economic trends and news in Southeast Asia, I would recommend investing in the region's consumer and technology sectors. These industries are expected to see significant growth due to rising consumer demand and regional integration. Additionally, with the increasing adoption of digital technologies in the region, there is a lot of potential for growth in the tech sector. Consider investing in companies like Alibaba, Tencent, and Sea Limited for long-term growth potential in Southeast Asia."
+        "response": "\nBased on the current economic trends and news in Southeast Asia, I would recommend investing in the region's consumer and technology sectors. These industries are expected to see significant growth due to rising consumer demand and regional integration. Additionally, with the increasing adoption of technology in the region, there is potential for high returns in the long-term. However, it is important to carefully research and diversify your investments to mitigate any potential risks."
     },
     {
         "about_me": "I'm a 31 year old finance professional.\nI'm looking for opportunities in the real estate sector.\nWhat's your opinion on investing in property markets in Latin America?",

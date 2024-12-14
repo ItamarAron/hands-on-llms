@@ -11,7 +11,7 @@ install:
 
 install_dev: install
 	PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring poetry install --with dev
-
+    
 install_only_dev:
 	PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring poetry install --only dev
 
