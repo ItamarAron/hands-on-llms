@@ -1,16 +1,15 @@
 import logging
 import os
 from pathlib import Path
-from typing import Iterable, List, Tuple
+from typing import Iterable, List, Tuple, Dict, Any
 
-from langchain import chains
-from langchain.memory import ConversationBufferWindowMemory
+from langchain_core.runnables import RunnableSequence
 
 from financial_bot import constants
 from financial_bot.chains import (
+    CompressHistoryChain,
     ContextExtractorChain,
     FinancialBotQAChain,
-    StatelessMemorySequentialChain,
 )
 from financial_bot.embeddings import EmbeddingModelSingleton
 from financial_bot.handlers import CometLLMMonitoringHandler
@@ -43,18 +42,18 @@ class FinancialBot:
     """
 
     def __init__(
-        self,
-        llm_model_id: str = constants.LLM_MODEL_ID,
-        llm_qlora_model_id: str = constants.LLM_QLORA_CHECKPOINT,
-        llm_template_name: str = constants.TEMPLATE_NAME,
-        llm_inference_max_new_tokens: int = constants.LLM_INFERNECE_MAX_NEW_TOKENS,
-        llm_inference_temperature: float = constants.LLM_INFERENCE_TEMPERATURE,
-        vector_collection_name: str = constants.VECTOR_DB_OUTPUT_COLLECTION_NAME,
-        vector_db_search_topk: int = constants.VECTOR_DB_SEARCH_TOPK,
-        model_cache_dir: Path = constants.CACHE_DIR,
-        streaming: bool = False,
-        embedding_model_device: str = "cuda:0",
-        debug: bool = False,
+            self,
+            llm_model_id: str = constants.LLM_MODEL_ID,
+            llm_qlora_model_id: str = constants.LLM_QLORA_CHECKPOINT,
+            llm_template_name: str = constants.TEMPLATE_NAME,
+            llm_inference_max_new_tokens: int = constants.LLM_INFERNECE_MAX_NEW_TOKENS,
+            llm_inference_temperature: float = constants.LLM_INFERENCE_TEMPERATURE,
+            vector_collection_name: str = constants.VECTOR_DB_OUTPUT_COLLECTION_NAME,
+            vector_db_search_topk: int = constants.VECTOR_DB_SEARCH_TOPK,
+            model_cache_dir: Path = constants.CACHE_DIR,
+            streaming: bool = False,
+            embedding_model_device: str = "cuda:0",
+            debug: bool = False,
     ):
         self._llm_model_id = llm_model_id
         self._llm_qlora_model_id = llm_qlora_model_id
@@ -86,7 +85,7 @@ class FinancialBot:
     def is_streaming(self) -> bool:
         return self._streamer is not None
 
-    def build_chain(self) -> chains.SequentialChain:
+    def build_chain(self)  -> RunnableSequence[Dict[str, Any], Dict[str, Any]]:
         """
         Constructs and returns a financial bot chain.
         This chain is designed to take as input the user description, `about_me` and a `question` and it will
@@ -116,7 +115,9 @@ class FinancialBot:
         [answer: str]
         """
 
-        logger.info("Building 1/3 - ContextExtractorChain")
+        logger.info("Building 1/4 - ContextExtractorChain")
+
+        logger.info("Building 2/4 - ContextExtractorChain")
         context_retrieval_chain = ContextExtractorChain(
             embedding_model=self._embd_model,
             vector_store=self._qdrant_client,
@@ -124,7 +125,7 @@ class FinancialBot:
             top_k=self._vector_db_search_topk,
         )
 
-        logger.info("Building 2/3 - FinancialBotQAChain")
+        logger.info("Building 3/4 - FinancialBotQAChain")
         if self._debug:
             callabacks = []
         else:
@@ -149,20 +150,12 @@ class FinancialBot:
             callbacks=callabacks,
         )
 
-        logger.info("Building 3/3 - Connecting chains into SequentialChain")
-        seq_chain = StatelessMemorySequentialChain(
-            history_input_key="to_load_history",
-            memory=ConversationBufferWindowMemory(
-                memory_key="chat_history",
-                input_key="question",
-                output_key="answer",
-                k=3,
-            ),
-            chains=[context_retrieval_chain, llm_generator_chain],
-            input_variables=["about_me", "question", "to_load_history"],
-            output_variables=["answer"],
-            verbose=True,
-        )
+        logger.info("Building 4/4 - Connecting chains into SequentialChain")
+
+        preparation_chain = {"compressed_history": CompressHistoryChain(),
+                             "context": context_retrieval_chain, }
+
+        seq_chain = preparation_chain | llm_generator_chain
 
         logger.info("Done building SequentialChain.")
         logger.info("Workflow:")
@@ -173,8 +166,8 @@ class FinancialBot:
             [answer: str]
             """
         )
-
         return seq_chain
+
 
     def answer(
         self,
@@ -204,8 +197,7 @@ class FinancialBot:
             "question": question,
             "to_load_history": to_load_history if to_load_history else [],
         }
-        response = self.finbot_chain.run(inputs)
-
+        response = self.finbot_chain.invoke(inputs)
         return response
 
     def stream_answer(self) -> Iterable[str]:

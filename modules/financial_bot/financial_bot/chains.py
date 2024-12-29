@@ -2,10 +2,9 @@ import time
 from typing import Any, Dict, List, Optional
 
 import qdrant_client
-from langchain import chains
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.base import Chain
-from langchain.llms import HuggingFacePipeline
+from langchain_community.llms import HuggingFacePipeline
 from unstructured.cleaners.core import (
     clean,
     clean_extra_whitespace,
@@ -17,65 +16,42 @@ from unstructured.cleaners.core import (
 from financial_bot.embeddings import EmbeddingModelSingleton
 from financial_bot.template import PromptTemplate
 
+from llmlingua import PromptCompressor
 
-class StatelessMemorySequentialChain(chains.SequentialChain):
-    """
-    A sequential chain that uses a stateless memory to store context between calls.
+history_input_key: str = "to_load_history"
+compressed_history_key: str = "compressed_history"
 
-    This chain overrides the _call and prep_outputs methods to load and clear the memory
-    before and after each call, respectively.
-    """
+class CompressHistoryChain(Chain):
+    """This custom chain handles LLM generation upon given prompt"""
 
-    history_input_key: str = "to_load_history"
+    llm_lingua: PromptCompressor = PromptCompressor(
+        model_name="microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+        use_llmlingua2=True,  # Whether to use llmlingua-2
+    )
 
-    def _call(self, inputs: Dict[str, str], **kwargs) -> Dict[str, str]:
-        """
-        Override _call to load history before calling the chain.
+    @property
+    def input_keys(self) -> List[str]:
+        """Returns a list of input keys for the chain"""
 
-        This method loads the history from the input dictionary and saves it to the
-        stateless memory. It then updates the inputs dictionary with the memory values
-        and removes the history input key. Finally, it calls the parent _call method
-        with the updated inputs and returns the results.
-        """
+        return [history_input_key]
 
-        to_load_history = inputs[self.history_input_key]
-        for (
-            human,
-            ai,
-        ) in to_load_history:
-            self.memory.save_context(
-                inputs={self.memory.input_key: human},
-                outputs={self.memory.output_key: ai},
-            )
-        memory_values = self.memory.load_memory_variables({})
-        inputs.update(memory_values)
+    @property
+    def output_keys(self) -> List[str]:
+        """Returns a list of output keys for the chain"""
 
-        del inputs[self.history_input_key]
+        return [compressed_history_key]
 
-        return super()._call(inputs, **kwargs)
+    def _call(self, inputs: Dict[str, Any], **kwargs) -> Dict[str, Any]:
 
-    def prep_outputs(
-        self,
-        inputs: Dict[str, str],
-        outputs: Dict[str, str],
-        return_only_outputs: bool = False,
-    ) -> Dict[str, str]:
-        """
-        Override prep_outputs to clear the internal memory after each call.
+        chat_history = inputs[history_input_key]
 
-        This method calls the parent prep_outputs method to get the results, then
-        clears the stateless memory and removes the memory key from the results
-        dictionary. It then returns the updated results.
-        """
+        context = [f"Question: {human}\n Answer: {ai}" for human, ai in chat_history ]
 
-        results = super().prep_outputs(inputs, outputs, return_only_outputs)
+        history_summary = self.llm_lingua.compress_prompt(context,target_token=200, keep_last_sentence = 3, force_tokens=['\n', '?'])
 
-        # Clear the internal memory.
-        self.memory.clear()
-        if self.memory.memory_key in results:
-            results[self.memory.memory_key] = ""
-
-        return results
+        return {
+            compressed_history_key: history_summary["compressed_prompt"]
+        }
 
 
 class ContextExtractorChain(Chain):
@@ -108,9 +84,11 @@ class ContextExtractorChain(Chain):
     def output_keys(self) -> List[str]:
         return ["context"]
 
-    def _call(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
+    def _call(self, inputs: Dict[str, Any], **kwargs) -> Dict[str, Any]:
         _, quest_key = self.input_keys
         question_str = inputs[quest_key]
+
+        del inputs[history_input_key]
 
         cleaned_question = self.clean(question_str)
         # TODO: Instead of cutting the question at 'max_input_length', chunk the question in 'max_input_length' chunks,
@@ -122,7 +100,7 @@ class ContextExtractorChain(Chain):
         # (or other time frame).
         matches = self.vector_store.search(
             query_vector=embeddings,
-            k=self.top_k,
+            limit=self.top_k,
             collection_name=self.vector_collection,
         )
 
@@ -134,7 +112,8 @@ class ContextExtractorChain(Chain):
             "context": context,
         }
 
-    def clean(self, question: str) -> str:
+    @staticmethod
+    def clean(question: str) -> str:
         """
         Clean the input question by removing unwanted characters.
 
@@ -165,7 +144,7 @@ class FinancialBotQAChain(Chain):
     def input_keys(self) -> List[str]:
         """Returns a list of input keys for the chain"""
 
-        return ["context"]
+        return ["context",compressed_history_key]
 
     @property
     def output_keys(self) -> List[str]:
@@ -180,12 +159,14 @@ class FinancialBotQAChain(Chain):
     ) -> Dict[str, Any]:
         """Calls the chain with the given inputs and returns the output"""
 
+        compressed_history = inputs[compressed_history_key][compressed_history_key]
+        inputs = inputs["context"]
         inputs = self.clean(inputs)
         prompt = self.template.format_infer(
             {
                 "user_context": inputs["about_me"],
                 "news_context": inputs["context"],
-                "chat_history": inputs["chat_history"],
+                "chat_history": compressed_history,
                 "question": inputs["question"],
             }
         )
@@ -214,11 +195,12 @@ class FinancialBotQAChain(Chain):
 
         return {"answer": response}
 
-    def clean(self, inputs: Dict[str, str]) -> Dict[str, str]:
+    @staticmethod
+    def clean(inputs: Dict[str, str]) -> Dict[str, str]:
         """Cleans the inputs by removing extra whitespace and grouping broken paragraphs"""
 
-        for key, input in inputs.items():
-            cleaned_input = clean_extra_whitespace(input)
+        for key, chain_input in inputs.items():
+            cleaned_input = clean_extra_whitespace(chain_input)
             cleaned_input = group_broken_paragraphs(cleaned_input)
 
             inputs[key] = cleaned_input

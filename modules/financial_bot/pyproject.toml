@@ -8,8 +8,8 @@ packages = [{include = "financial_bot"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
-qdrant-client = "1.1.1"
-langchain = "^0.0.285"
+qdrant-client = "^1.12.2"
+langchain = "^0.3.13"
 comet-ml = "3.35.1"
 transformers = "^4.31.0"
 peft = "^0.4.0"
@@ -24,6 +24,8 @@ torch = "2.0.1"
 beam-sdk = "0.15.9"
 gradio = "^3.48.0"
 unstructured = "^0.10.28"
+llmlingua = "^0.2.2"
+langchain-community = "^0.3.13"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.7.0"

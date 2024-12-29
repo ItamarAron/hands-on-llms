@@ -115,3 +115,17 @@ register_llm_template(
         eos="<|endoftext|>",
     )
 )
+
+register_llm_template(
+    PromptTemplate(
+        name="summarize_history",
+        system_template=">>INTRODUCTION<< {system_message}",
+        system_message="You are a helpful assistant ",
+        context_template=">>DOMAIN<< {user_context}\n{news_context}",
+        chat_history_template=">>SUMMARY<< {chat_history}",
+        question_template=">>QUESTION<< {question}",
+        answer_template=">>ANSWER<< {answer}",
+        sep="\n",
+        eos="<|endoftext|>",
+    )
+)
