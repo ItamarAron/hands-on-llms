@@ -20,7 +20,7 @@ def evaluate_w_ragas(query: str, context: list[str], output: str, ground_truth: 
         "question": [query],  # Question as Sequence(str)
         "answer": [output],  # Answer as Sequence(str)
         "contexts": [context],  # Context as Sequence(str)
-        "ground_truths": [[ground_truth]],  # Ground Truth as Sequence(str)
+        "ground_truth": [ground_truth],  # Ground Truth as Sequence(str)
     }
 
     dataset = Dataset.from_dict(data_sample)
@@ -53,12 +53,13 @@ def run_local(
         context_recall,
         #context_relevancy,
         #context_utilization,
-        faithfulness
+        faithfulness,
+        answer_relevancy
     )
-    from ragas.metrics.context_precision import context_relevancy
+
     metrics = [
         #context_utilization,
-        context_relevancy,
+        answer_relevancy,
         context_recall,
         answer_similarity,
         #context_entity_recall,
@@ -74,9 +75,13 @@ def run_local(
                 "question": elem["question"],
                 "to_load_history": elem["history"] if "history" in elem else [],
             }
-            output_context = bot.finbot_chain.chains[0].run(input_payload)
+            logger.info("Input=%s", input_payload)
+
             response = bot.answer(**input_payload)
-            logger.info("Score=%s", evaluate_w_ragas(query=elem["question"], context=output_context.split('\n'), output=response, ground_truth=elem["response"], metrics=metrics))
+
+            context = response["context"]["context"]
+            logging.info("context= %s", context)
+            logger.info("Score=%s", evaluate_w_ragas(query=elem["question"], context=context.split('\n'), output=response["answer"], ground_truth=elem["response"], metrics=metrics))
 
     return response
 

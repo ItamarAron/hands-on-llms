@@ -5,7 +5,7 @@ from typing import List, Optional, Tuple
 
 import torch
 from comet_ml import API
-from langchain.llms import HuggingFacePipeline
+from langchain_huggingface import HuggingFacePipeline
 from peft import LoraConfig, PeftConfig, PeftModel
 from transformers import (
     AutoModelForCausalLM,
@@ -204,7 +204,6 @@ def build_qlora_model(
         pretrained_model_name_or_path,
         revision="main",
         quantization_config=bnb_config,
-        load_in_4bit=True,
         device_map="auto",
         trust_remote_code=False,
         cache_dir=str(cache_dir) if cache_dir else None,

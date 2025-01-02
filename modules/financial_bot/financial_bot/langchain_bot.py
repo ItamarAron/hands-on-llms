@@ -174,7 +174,7 @@ class FinancialBot:
         about_me: str,
         question: str,
         to_load_history: List[Tuple[str, str]] = None,
-    ) -> str:
+    ) -> dict[str,Any]:
         """
         Given a short description about the user and a question make the LLM
         generate a response.

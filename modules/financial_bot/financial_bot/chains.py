@@ -4,7 +4,7 @@ from typing import Any, Dict, List, Optional
 import qdrant_client
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.base import Chain
-from langchain_community.llms import HuggingFacePipeline
+from langchain_huggingface import HuggingFacePipeline
 from unstructured.cleaners.core import (
     clean,
     clean_extra_whitespace,
@@ -46,11 +46,14 @@ class CompressHistoryChain(Chain):
         chat_history = inputs[history_input_key]
 
         context = [f"Question: {human}\n Answer: {ai}" for human, ai in chat_history ]
-
-        history_summary = self.llm_lingua.compress_prompt(context,target_token=200, keep_last_sentence = 3, force_tokens=['\n', '?'])
-
-        return {
-            compressed_history_key: history_summary["compressed_prompt"]
+        if context:
+            history_summary = self.llm_lingua.compress_prompt(context, keep_last_sentence = 3, force_tokens=['\n', '?'])["compressed_prompt"]
+            return {
+            compressed_history_key: history_summary
+        }
+        else:
+            return {
+                compressed_history_key: ""
         }
 
 

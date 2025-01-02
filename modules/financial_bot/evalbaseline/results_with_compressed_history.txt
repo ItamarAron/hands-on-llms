@@ -1,0 +1,1034 @@
+2024-12-29 00:48:16,549 - INFO - Initializing env vars...
+2024-12-29 00:48:16,549 - INFO - Loading environment variables from: .env
+2024-12-29 00:48:16,549 - INFO - Python-dotenv could not find configuration file .env.
+2024-12-29 00:52:06,987 - INFO - Initializing env vars...
+2024-12-29 00:52:06,988 - INFO - Loading environment variables from: .env
+2024-12-29 00:55:44,183 - INFO - Initializing env vars...
+2024-12-29 00:55:44,183 - INFO - Loading environment variables from: .env
+2024-12-29 00:55:59,710 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g
+2024-12-29 00:55:59,711 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g/_remote_module_non_scriptable.py
+2024-12-29 00:56:30,009 - INFO - Initializing env vars...
+2024-12-29 00:56:30,010 - INFO - Loading environment variables from: .env
+2024-12-29 00:56:34,514 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0
+2024-12-29 00:56:34,514 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0/_remote_module_non_scriptable.py
+2024-12-28 23:23:41,650 - INFO - Initializing env vars...
+2024-12-28 23:23:41,650 - INFO - Loading environment variables from: .env
+2024-12-28 23:23:57,766 - INFO - NumExpr defaulting to 8 threads.
+2024-12-28 23:24:07,157 - INFO - Created a temporary directory at /tmp/tmpgv7rr0r7
+2024-12-28 23:24:07,157 - INFO - Writing /tmp/tmpgv7rr0r7/_remote_module_non_scriptable.py
+2024-12-28 23:28:10,026 - INFO - Initializing env vars...
+2024-12-28 23:28:10,027 - INFO - Loading environment variables from: .env
+2024-12-28 23:28:13,711 - INFO - NumExpr defaulting to 8 threads.
+2024-12-28 23:28:15,640 - INFO - Created a temporary directory at /tmp/tmp_mh9sylp
+2024-12-28 23:28:15,641 - INFO - Writing /tmp/tmp_mh9sylp/_remote_module_non_scriptable.py
+2024-12-28 23:28:17,076 - INFO - ####################################################################################################
+2024-12-28 23:28:17,113 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-28 23:28:17,113 - INFO - Available RAM: 52.51 GB
+2024-12-28 23:28:17,114 - INFO - ####################################################################################################
+2024-12-28 23:28:17,114 - INFO - Building QDrant Client
+2024-12-28 23:29:57,137 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2024-12-28 23:29:57,137 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2024-12-28 23:29:57,138 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:29:57,138 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:29:57,142 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:30:01,729 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-28 23:30:01,729 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-28 23:30:01,729 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-28 23:30:01,729 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-28 23:30:01,730 - INFO - Done building SequentialChain.
+2024-12-28 23:30:01,730 - INFO - Workflow:
+2024-12-28 23:30:01,730 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-28 23:30:01,730 - INFO - ####################################################################################################
+2024-12-28 23:30:01,765 - INFO - GPU 0 memory available: 10467 MiB
+2024-12-28 23:30:01,766 - INFO - Available RAM: 52.39 GB
+2024-12-28 23:30:01,766 - INFO - ####################################################################################################
+2024-12-29 00:02:59,845 - INFO - Initializing env vars...
+2024-12-29 00:02:59,848 - INFO - Loading environment variables from: .env
+2024-12-29 00:03:17,061 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:03:25,147 - INFO - Created a temporary directory at /tmp/tmp701niq3t
+2024-12-29 00:03:25,147 - INFO - Writing /tmp/tmp701niq3t/_remote_module_non_scriptable.py
+2024-12-29 00:03:46,021 - INFO - ####################################################################################################
+2024-12-29 00:03:46,061 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:03:46,061 - INFO - Available RAM: 52.59 GB
+2024-12-29 00:03:46,061 - INFO - ####################################################################################################
+2024-12-29 00:03:46,061 - INFO - Building QDrant Client
+2024-12-29 00:03:49,006 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:03:49,006 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:03:49,006 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:03:49,006 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:03:49,007 - INFO - Done building SequentialChain.
+2024-12-29 00:03:49,007 - INFO - Workflow:
+2024-12-29 00:03:49,007 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-29 00:03:49,007 - INFO - ####################################################################################################
+2024-12-29 00:03:49,044 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:03:49,044 - INFO - Available RAM: 52.49 GB
+2024-12-29 00:03:49,044 - INFO - ####################################################################################################
+2024-12-29 00:06:35,243 - INFO - Initializing env vars...
+2024-12-29 00:06:35,243 - INFO - Loading environment variables from: .env
+2024-12-29 00:06:38,950 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:06:40,505 - INFO - Created a temporary directory at /tmp/tmpdphnyqg3
+2024-12-29 00:06:40,506 - INFO - Writing /tmp/tmpdphnyqg3/_remote_module_non_scriptable.py
+2024-12-29 00:06:41,808 - INFO - ####################################################################################################
+2024-12-29 00:06:41,845 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:06:41,845 - INFO - Available RAM: 52.54 GB
+2024-12-29 00:06:41,846 - INFO - ####################################################################################################
+2024-12-29 00:06:41,846 - INFO - Building QDrant Client
+2024-12-29 00:06:42,608 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:06:42,608 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:06:42,609 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:06:42,609 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:06:42,609 - INFO - Done building SequentialChain.
+2024-12-29 00:06:42,609 - INFO - Workflow:
+2024-12-29 00:06:42,609 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-29 00:06:42,609 - INFO - ####################################################################################################
+2024-12-29 00:06:42,645 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:06:42,645 - INFO - Available RAM: 52.44 GB
+2024-12-29 00:06:42,645 - INFO - ####################################################################################################
+2024-12-29 00:15:03,485 - INFO - Initializing env vars...
+2024-12-29 00:15:03,485 - INFO - Loading environment variables from: .env
+2024-12-29 00:15:07,246 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:15:08,732 - INFO - Created a temporary directory at /tmp/tmp80vbhyxa
+2024-12-29 00:15:08,732 - INFO - Writing /tmp/tmp80vbhyxa/_remote_module_non_scriptable.py
+2024-12-29 00:15:09,987 - INFO - ####################################################################################################
+2024-12-29 00:15:10,020 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:15:10,020 - INFO - Available RAM: 52.52 GB
+2024-12-29 00:15:10,020 - INFO - ####################################################################################################
+2024-12-29 00:15:10,020 - INFO - Building QDrant Client
+2024-12-29 00:15:10,787 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:15:10,787 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:15:10,788 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:15:10,788 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:15:10,788 - INFO - Done building SequentialChain.
+2024-12-29 00:15:10,788 - INFO - Workflow:
+2024-12-29 00:15:10,788 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-29 00:15:10,788 - INFO - ####################################################################################################
+2024-12-29 00:15:10,821 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:15:10,821 - INFO - Available RAM: 52.42 GB
+2024-12-29 00:15:10,821 - INFO - ####################################################################################################
+2024-12-29 00:15:10,949 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:17:57,020 - INFO - Initializing env vars...
+2024-12-29 00:17:57,020 - INFO - Loading environment variables from: .env
+2024-12-29 00:18:00,710 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:18:02,247 - INFO - Created a temporary directory at /tmp/tmpvxvz6b5o
+2024-12-29 00:18:02,247 - INFO - Writing /tmp/tmpvxvz6b5o/_remote_module_non_scriptable.py
+2024-12-29 00:18:03,493 - INFO - ####################################################################################################
+2024-12-29 00:18:03,524 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:18:03,525 - INFO - Available RAM: 52.51 GB
+2024-12-29 00:18:03,525 - INFO - ####################################################################################################
+2024-12-29 00:18:03,525 - INFO - Building QDrant Client
+2024-12-29 00:18:04,282 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:18:04,282 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:18:04,283 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:18:04,283 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:18:04,283 - INFO - Done building SequentialChain.
+2024-12-29 00:18:04,283 - INFO - Workflow:
+2024-12-29 00:18:04,283 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-29 00:18:04,283 - INFO - ####################################################################################################
+2024-12-29 00:18:04,299 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:18:04,299 - INFO - Available RAM: 52.42 GB
+2024-12-29 00:18:04,299 - INFO - ####################################################################################################
+2024-12-29 00:18:04,399 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:19:35,304 - INFO - Initializing env vars...
+2024-12-29 00:19:35,304 - INFO - Loading environment variables from: .env
+2024-12-29 00:19:39,993 - INFO - Created a temporary directory at /tmp/tmp_6qbcm50
+2024-12-29 00:19:39,993 - INFO - Writing /tmp/tmp_6qbcm50/_remote_module_non_scriptable.py
+2024-12-29 00:19:41,257 - INFO - ####################################################################################################
+2024-12-29 00:19:41,296 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:19:41,296 - INFO - Available RAM: 52.47 GB
+2024-12-29 00:19:41,296 - INFO - ####################################################################################################
+2024-12-29 00:19:41,296 - INFO - Building QDrant Client
+2024-12-29 00:21:15,326 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:15,326 - INFO - Loading Lora Confing from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:15,825 - INFO - Loading Peft Model from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:20,422 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:21:20,422 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:21:20,422 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:21:20,423 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:21:20,423 - INFO - Done building SequentialChain.
+2024-12-29 00:21:20,423 - INFO - Workflow:
+2024-12-29 00:21:20,423 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2024-12-29 00:25:43,723 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:03,967 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:21,532 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:31,113 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 14:00:09,867 - INFO - Initializing env vars...
+2025-01-02 14:00:09,871 - INFO - Loading environment variables from: .env
+2025-01-02 14:00:31,928 - INFO - Created a temporary directory at /tmp/tmp8cil7nuq
+2025-01-02 14:00:31,928 - INFO - Writing /tmp/tmp8cil7nuq/_remote_module_non_scriptable.py
+2025-01-02 14:00:33,276 - INFO - ####################################################################################################
+2025-01-02 14:00:33,336 - INFO - GPU 0 memory available: 15931 MiB
+2025-01-02 14:00:33,336 - INFO - Available RAM: 53.39 GB
+2025-01-02 14:00:33,336 - INFO - ####################################################################################################
+2025-01-02 14:00:33,336 - INFO - Building QDrant Client
+2025-01-02 14:03:50,318 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:50,318 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:50,323 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:54,716 - INFO - Building 1/3 - ContextExtractorChain
+2025-01-02 14:03:54,716 - INFO - Building 2/3 - FinancialBotQAChain
+2025-01-02 14:03:54,716 - INFO - Building 3/3 - Connecting chains into SequentialChain
+2025-01-02 14:03:54,717 - INFO - Done building SequentialChain.
+2025-01-02 14:03:54,717 - INFO - Workflow:
+2025-01-02 14:03:54,717 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 14:03:57,100 - INFO - Use pytorch device: cuda
+2025-01-02 14:03:57,475 - INFO - Use pytorch device: cuda
+2025-01-02 14:04:07,783 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:07,818 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:50,908 - INFO - Use pytorch device: cuda
+2025-01-02 14:04:50,916 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:04:57,500 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:04:57,601 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:57,636 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:05:37,483 - INFO - Use pytorch device: cuda
+2025-01-02 14:05:37,488 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:05:41,265 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:05:41,369 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:05:41,413 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:06:20,984 - INFO - Use pytorch device: cuda
+2025-01-02 14:06:20,989 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:06:28,480 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:06:28,574 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:06:28,609 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:08,519 - INFO - Use pytorch device: cuda
+2025-01-02 14:07:08,524 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:07:13,176 - INFO - error_code=None error_message='The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)' error_param=None error_type=server_error message='OpenAI API error received' stream_error=False
+2025-01-02 14:07:13,176 - WARNING - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.) {
+  "error": {
+    "message": "The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)",
+    "type": "server_error",
+    "param": null,
+    "code": null
+  }
+} 500 {'error': {'message': 'The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Thu, 02 Jan 2025 14:07:13 GMT', 'Content-Type': 'application/json', 'Content-Length': '369', 'Connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-processing-ms': '310', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9996', 'x-ratelimit-remaining-tokens': '199378', 'x-ratelimit-reset-requests': '30.466s', 'x-ratelimit-reset-tokens': '186ms', 'x-request-id': 'req_0cd3dd9b1e8ade2d17b923f87c3ed05d', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'CF-Cache-Status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Server': 'cloudflare', 'CF-RAY': '8fbb50684f3e1ca7-AMS', 'alt-svc': 'h3=":443"; ma=86400'}.
+2025-01-02 14:07:18,104 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:07:18,204 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:18,239 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:59,943 - INFO - Use pytorch device: cuda
+2025-01-02 14:07:59,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:08:06,103 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.4545, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:08:06,200 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:06,232 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:49,402 - INFO - Use pytorch device: cuda
+2025-01-02 14:08:49,408 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:08:58,298 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1579, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:08:58,416 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:58,450 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:09:41,722 - INFO - Use pytorch device: cuda
+2025-01-02 14:09:41,727 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:09:48,778 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:09:48,880 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:09:48,912 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:10:30,188 - INFO - Use pytorch device: cuda
+2025-01-02 14:10:30,193 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:10:36,561 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:10:36,654 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:10:36,687 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:11:19,587 - INFO - Use pytorch device: cuda
+2025-01-02 14:11:19,592 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:11:26,689 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.2143, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:11:26,751 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:11:26,784 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:09,494 - INFO - Use pytorch device: cuda
+2025-01-02 14:12:09,500 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:12:15,407 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.3636, 'context_recall': 0.8000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:12:15,468 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:15,499 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:57,362 - INFO - Use pytorch device: cuda
+2025-01-02 14:12:57,368 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:13:04,767 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:13:04,861 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:04,893 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:45,922 - INFO - Use pytorch device: cuda
+2025-01-02 14:13:45,927 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:13:50,765 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:13:50,824 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:50,866 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:14:34,535 - INFO - Use pytorch device: cuda
+2025-01-02 14:14:34,541 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:14:39,347 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.5000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:14:39,453 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:14:39,487 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:15:19,962 - INFO - Use pytorch device: cuda
+2025-01-02 14:15:19,967 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:15:24,445 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.2000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:15:24,515 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:15:24,549 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:07,314 - INFO - Use pytorch device: cuda
+2025-01-02 14:16:07,319 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:16:14,125 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:16:14,189 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:14,226 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:55,352 - INFO - Use pytorch device: cuda
+2025-01-02 14:16:55,357 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:16:59,865 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:16:59,969 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:00,001 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:44,026 - INFO - Use pytorch device: cuda
+2025-01-02 14:17:44,032 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:17:51,355 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:17:51,420 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:51,449 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:18:34,228 - INFO - Use pytorch device: cuda
+2025-01-02 14:18:34,233 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:18:39,534 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1667, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:18:39,627 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:18:39,659 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:19:21,944 - INFO - Use pytorch device: cuda
+2025-01-02 14:19:21,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:19:27,822 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:19:27,884 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:19:27,925 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:08,730 - INFO - Use pytorch device: cuda
+2025-01-02 14:20:08,735 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:20:14,742 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:20:15,045 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:15,080 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:58,340 - INFO - Use pytorch device: cuda
+2025-01-02 14:20:58,345 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:21:04,065 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:21:04,357 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:04,390 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:46,383 - INFO - Use pytorch device: cuda
+2025-01-02 14:21:46,388 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:21:50,185 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:21:50,467 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:50,500 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:22:32,818 - INFO - Use pytorch device: cuda
+2025-01-02 14:22:32,823 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:22:39,352 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:22:39,425 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:22:39,461 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:23:22,192 - INFO - Use pytorch device: cuda
+2025-01-02 14:23:22,197 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:23:28,460 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.5000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:23:28,571 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:23:28,606 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:24:11,281 - INFO - Use pytorch device: cuda
+2025-01-02 14:24:11,286 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:24:17,443 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 15:47:21,293 - INFO - Initializing env vars...
+2025-01-02 15:47:21,298 - INFO - Loading environment variables from: .env
+2025-01-02 15:47:37,546 - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 15:47:44,222 - INFO - Created a temporary directory at /tmp/tmprkyq5hhg
+2025-01-02 15:47:44,223 - INFO - Writing /tmp/tmprkyq5hhg/_remote_module_non_scriptable.py
+2025-01-02 15:48:05,909 - INFO - ####################################################################################################
+2025-01-02 15:48:05,946 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 15:48:05,947 - INFO - Available RAM: 52.55 GB
+2025-01-02 15:48:05,947 - INFO - ####################################################################################################
+2025-01-02 15:48:05,947 - INFO - Building QDrant Client
+2025-01-02 15:51:11,879 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 15:51:11,879 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 15:51:11,879 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 15:51:11,879 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 15:51:11,883 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 15:51:16,461 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 15:51:16,461 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 15:51:16,462 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 15:51:16,462 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 15:51:16,462 - INFO - Done building SequentialChain.
+2025-01-02 15:51:16,462 - INFO - Workflow:
+2025-01-02 15:51:16,462 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 15:51:16,462 - INFO - ####################################################################################################
+2025-01-02 15:51:16,502 - INFO - GPU 0 memory available: 10475 MiB
+2025-01-02 15:51:16,502 - INFO - Available RAM: 52.47 GB
+2025-01-02 15:51:16,502 - INFO - ####################################################################################################
+2025-01-02 15:51:23,819 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 16:18:16,292 - INFO - Initializing env vars...
+2025-01-02 16:18:16,296 - INFO - Loading environment variables from: .env
+2025-01-02 16:18:32,798 - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 16:24:19,073 - INFO - Initializing env vars...
+2025-01-02 16:24:19,073 - INFO - Loading environment variables from: .env
+2025-01-02 16:24:22,836 - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 16:24:47,897 - INFO - ####################################################################################################
+2025-01-02 16:24:47,938 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 16:24:47,938 - INFO - Available RAM: 52.53 GB
+2025-01-02 16:24:47,938 - INFO - ####################################################################################################
+2025-01-02 16:24:47,938 - INFO - Building QDrant Client
+2025-01-02 16:37:41,451 - INFO - Initializing env vars...
+2025-01-02 16:37:41,452 - INFO - Loading environment variables from: .env
+2025-01-02 16:37:45,256 - INFO - NumExpr defaulting to 8 threads.
+2025-01-02 16:37:48,035 - INFO - ####################################################################################################
+2025-01-02 16:37:48,068 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 16:37:48,069 - INFO - Available RAM: 52.53 GB
+2025-01-02 16:37:48,069 - INFO - ####################################################################################################
+2025-01-02 16:37:48,069 - INFO - Building QDrant Client
+2025-01-02 16:37:48,813 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 16:41:08,706 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 16:41:08,706 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 16:41:08,706 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:41:08,706 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:41:08,710 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:41:13,322 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 16:41:13,322 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 16:41:13,323 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 16:41:13,323 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 16:41:13,323 - INFO - Done building SequentialChain.
+2025-01-02 16:41:13,323 - INFO - Workflow:
+2025-01-02 16:41:13,323 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 16:41:13,323 - INFO - ####################################################################################################
+2025-01-02 16:41:13,361 - INFO - GPU 0 memory available: 11009 MiB
+2025-01-02 16:41:13,362 - INFO - Available RAM: 51.71 GB
+2025-01-02 16:41:13,362 - INFO - ####################################################################################################
+2025-01-02 16:41:13,986 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 16:41:14,090 - INFO - Created a temporary directory at /tmp/tmpfc1trjp3
+2025-01-02 16:41:14,090 - INFO - Writing /tmp/tmpfc1trjp3/_remote_module_non_scriptable.py
+2025-01-02 16:49:17,499 - INFO - Initializing env vars...
+2025-01-02 16:49:17,500 - INFO - Loading environment variables from: .env
+2025-01-02 16:49:23,843 - INFO - ####################################################################################################
+2025-01-02 16:49:23,882 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 16:49:23,882 - INFO - Available RAM: 52.47 GB
+2025-01-02 16:49:23,882 - INFO - ####################################################################################################
+2025-01-02 16:49:23,882 - INFO - Building QDrant Client
+2025-01-02 16:49:24,535 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 16:49:35,447 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 16:49:35,447 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 16:49:35,448 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:49:35,448 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:49:35,448 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 16:49:39,419 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 16:49:39,419 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 16:49:39,419 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 16:49:39,420 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 16:49:39,420 - INFO - Done building SequentialChain.
+2025-01-02 16:49:39,420 - INFO - Workflow:
+2025-01-02 16:49:39,420 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 17:00:24,191 - INFO - Initializing env vars...
+2025-01-02 17:00:24,191 - INFO - Loading environment variables from: .env
+2025-01-02 17:00:31,305 - INFO - ####################################################################################################
+2025-01-02 17:00:31,337 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 17:00:31,338 - INFO - Available RAM: 52.46 GB
+2025-01-02 17:00:31,338 - INFO - ####################################################################################################
+2025-01-02 17:00:31,338 - INFO - Building QDrant Client
+2025-01-02 17:00:31,947 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 17:00:41,769 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 17:00:41,769 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 17:00:41,769 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:00:41,769 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:00:41,769 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:00:45,385 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 17:00:45,385 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 17:00:45,385 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 17:00:45,385 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 17:00:45,386 - INFO - Done building SequentialChain.
+2025-01-02 17:00:45,386 - INFO - Workflow:
+2025-01-02 17:00:45,386 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 17:11:21,397 - INFO - Initializing env vars...
+2025-01-02 17:11:21,397 - INFO - Loading environment variables from: .env
+2025-01-02 17:11:27,785 - INFO - ####################################################################################################
+2025-01-02 17:11:27,817 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 17:11:27,818 - INFO - Available RAM: 52.48 GB
+2025-01-02 17:11:27,818 - INFO - ####################################################################################################
+2025-01-02 17:11:27,818 - INFO - Building QDrant Client
+2025-01-02 17:11:28,514 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 17:11:38,372 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 17:11:38,373 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 17:11:38,373 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:11:38,373 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:11:38,373 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:11:41,986 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 17:11:41,986 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 17:11:41,986 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 17:11:41,986 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 17:11:41,987 - INFO - Done building SequentialChain.
+2025-01-02 17:11:41,987 - INFO - Workflow:
+2025-01-02 17:11:41,987 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 17:18:21,971 - INFO - Initializing env vars...
+2025-01-02 17:18:21,971 - INFO - Loading environment variables from: .env
+2025-01-02 17:18:28,501 - INFO - ####################################################################################################
+2025-01-02 17:18:28,537 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 17:18:28,538 - INFO - Available RAM: 52.49 GB
+2025-01-02 17:18:28,538 - INFO - ####################################################################################################
+2025-01-02 17:18:28,538 - INFO - Building QDrant Client
+2025-01-02 17:18:29,437 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 17:18:39,362 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 17:18:39,362 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 17:18:39,363 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:18:39,363 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:18:39,363 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:18:42,967 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 17:18:42,967 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 17:18:42,967 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 17:18:42,967 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 17:18:42,968 - INFO - Done building SequentialChain.
+2025-01-02 17:18:42,968 - INFO - Workflow:
+2025-01-02 17:18:42,968 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 17:18:43,578 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:18:44,271 - INFO - Created a temporary directory at /tmp/tmpci1il63s
+2025-01-02 17:18:44,271 - INFO - Writing /tmp/tmpci1il63s/_remote_module_non_scriptable.py
+2025-01-02 17:18:51,569 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:26:18,402 - INFO - Initializing env vars...
+2025-01-02 17:26:18,402 - INFO - Loading environment variables from: .env
+2025-01-02 17:26:24,449 - INFO - ####################################################################################################
+2025-01-02 17:26:24,490 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 17:26:24,490 - INFO - Available RAM: 52.45 GB
+2025-01-02 17:26:24,490 - INFO - ####################################################################################################
+2025-01-02 17:26:24,490 - INFO - Building QDrant Client
+2025-01-02 17:26:26,533 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 17:29:35,782 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 17:29:35,782 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 17:29:35,782 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:29:35,783 - INFO - Loading Lora Confing from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:29:35,786 - INFO - Loading Peft Model from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 17:29:40,036 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 17:29:40,036 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 17:29:40,037 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 17:29:40,037 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 17:29:40,037 - INFO - Done building SequentialChain.
+2025-01-02 17:29:40,037 - INFO - Workflow:
+2025-01-02 17:29:40,037 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 17:32:27,744 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:33:26,678 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:33:43,367 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:33:43,760 - INFO - Created a temporary directory at /tmp/tmp6i733nmc
+2025-01-02 17:33:43,760 - INFO - Writing /tmp/tmp6i733nmc/_remote_module_non_scriptable.py
+2025-01-02 17:34:05,162 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:34:42,487 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:34:49,108 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 17:36:18,080 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:01:43,151 - INFO - Initializing env vars...
+2025-01-02 18:01:43,159 - INFO - Loading environment variables from: .env
+2025-01-02 18:02:27,602 - INFO - ####################################################################################################
+2025-01-02 18:02:27,637 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:02:27,637 - INFO - Available RAM: 52.52 GB
+2025-01-02 18:02:27,638 - INFO - ####################################################################################################
+2025-01-02 18:02:27,638 - INFO - Building QDrant Client
+2025-01-02 18:02:30,123 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:05:51,759 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:05:51,759 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:05:51,759 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:05:51,759 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:05:51,767 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:05:56,089 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:05:56,089 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:05:56,089 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:05:56,089 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:05:56,089 - INFO - Done building SequentialChain.
+2025-01-02 18:05:56,089 - INFO - Workflow:
+2025-01-02 18:05:56,089 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:05:57,470 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:30:19,580 - INFO - Initializing env vars...
+2025-01-02 18:30:19,584 - INFO - Loading environment variables from: .env
+2025-01-02 18:31:02,760 - INFO - ####################################################################################################
+2025-01-02 18:31:02,799 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:31:02,799 - INFO - Available RAM: 52.56 GB
+2025-01-02 18:31:02,799 - INFO - ####################################################################################################
+2025-01-02 18:31:02,799 - INFO - Building QDrant Client
+2025-01-02 18:31:05,149 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:34:25,426 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:34:25,426 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:34:25,426 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:34:25,427 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:34:25,430 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:34:29,726 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:34:29,726 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:34:29,727 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:34:29,727 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:34:29,727 - INFO - Done building SequentialChain.
+2025-01-02 18:34:29,727 - INFO - Workflow:
+2025-01-02 18:34:29,727 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:34:30,364 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 18:34:30,960 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:50:53,369 - INFO - Initializing env vars...
+2025-01-02 18:50:53,369 - INFO - Loading environment variables from: .env
+2025-01-02 18:51:00,827 - INFO - ####################################################################################################
+2025-01-02 18:51:00,860 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:51:00,860 - INFO - Available RAM: 52.50 GB
+2025-01-02 18:51:00,860 - INFO - ####################################################################################################
+2025-01-02 18:51:00,860 - INFO - Building QDrant Client
+2025-01-02 18:51:01,451 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:51:12,074 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:51:12,075 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:51:12,075 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:51:12,075 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:51:12,075 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:51:15,698 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:51:15,698 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:51:15,698 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:51:15,698 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:51:15,698 - INFO - Done building SequentialChain.
+2025-01-02 18:51:15,698 - INFO - Workflow:
+2025-01-02 18:51:15,699 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:51:16,077 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 18:51:16,422 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:51:17,003 - INFO - Created a temporary directory at /tmp/tmprr45le_7
+2025-01-02 18:51:17,004 - INFO - Writing /tmp/tmprr45le_7/_remote_module_non_scriptable.py
+2025-01-02 18:51:23,620 - INFO - context= {'about_me': "I'm a 26 year old investor. I want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'context': 'On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.'}
+2025-01-02 18:52:41,035 - INFO - Initializing env vars...
+2025-01-02 18:52:41,035 - INFO - Loading environment variables from: .env
+2025-01-02 18:52:47,248 - INFO - ####################################################################################################
+2025-01-02 18:52:47,287 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:52:47,287 - INFO - Available RAM: 52.50 GB
+2025-01-02 18:52:47,287 - INFO - ####################################################################################################
+2025-01-02 18:52:47,287 - INFO - Building QDrant Client
+2025-01-02 18:52:47,945 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:52:57,509 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:52:57,509 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:52:57,509 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:52:57,509 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:52:57,510 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:53:01,125 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:53:01,125 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:53:01,125 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:53:01,125 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:53:01,126 - INFO - Done building SequentialChain.
+2025-01-02 18:53:01,126 - INFO - Workflow:
+2025-01-02 18:53:01,126 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:53:01,505 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 18:53:01,846 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:53:02,357 - INFO - Created a temporary directory at /tmp/tmpjarji8v9
+2025-01-02 18:53:02,357 - INFO - Writing /tmp/tmpjarji8v9/_remote_module_non_scriptable.py
+2025-01-02 18:53:08,881 - INFO - context= {'about_me': "I'm a 26 year old investor. I want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'context': 'On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.'}
+2025-01-02 18:54:42,514 - INFO - Initializing env vars...
+2025-01-02 18:54:42,514 - INFO - Loading environment variables from: .env
+2025-01-02 18:54:49,000 - INFO - ####################################################################################################
+2025-01-02 18:54:49,035 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:54:49,036 - INFO - Available RAM: 52.52 GB
+2025-01-02 18:54:49,036 - INFO - ####################################################################################################
+2025-01-02 18:54:49,036 - INFO - Building QDrant Client
+2025-01-02 18:54:49,680 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:54:59,289 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:54:59,290 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:54:59,290 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:54:59,290 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:54:59,290 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:55:02,916 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:55:02,917 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:55:02,917 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:55:02,917 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:55:02,917 - INFO - Done building SequentialChain.
+2025-01-02 18:55:02,917 - INFO - Workflow:
+2025-01-02 18:55:02,917 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:55:03,294 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 18:55:03,630 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:55:04,172 - INFO - Created a temporary directory at /tmp/tmp4thft7jd
+2025-01-02 18:55:04,172 - INFO - Writing /tmp/tmp4thft7jd/_remote_module_non_scriptable.py
+2025-01-02 18:55:10,728 - INFO - context= {'about_me': "I'm a 26 year old investor. I want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'context': 'On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.'}
+2025-01-02 18:57:39,813 - INFO - Initializing env vars...
+2025-01-02 18:57:39,813 - INFO - Loading environment variables from: .env
+2025-01-02 18:57:46,207 - INFO - ####################################################################################################
+2025-01-02 18:57:46,239 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 18:57:46,240 - INFO - Available RAM: 52.49 GB
+2025-01-02 18:57:46,240 - INFO - ####################################################################################################
+2025-01-02 18:57:46,240 - INFO - Building QDrant Client
+2025-01-02 18:57:46,888 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 18:57:56,471 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 18:57:56,471 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 18:57:56,471 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:57:56,472 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:57:56,472 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 18:58:00,108 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 18:58:00,108 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 18:58:00,108 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 18:58:00,109 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 18:58:00,109 - INFO - Done building SequentialChain.
+2025-01-02 18:58:00,109 - INFO - Workflow:
+2025-01-02 18:58:00,109 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 18:58:00,487 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 18:58:00,993 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 18:58:01,418 - INFO - Created a temporary directory at /tmp/tmpshwk1dpi
+2025-01-02 18:58:01,418 - INFO - Writing /tmp/tmpshwk1dpi/_remote_module_non_scriptable.py
+2025-01-02 18:58:07,944 - INFO - context= {'about_me': "I'm a 26 year old investor. I want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'context': 'On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.'}
+2025-01-02 19:01:48,086 - INFO - Initializing env vars...
+2025-01-02 19:01:48,086 - INFO - Loading environment variables from: .env
+2025-01-02 19:01:54,440 - INFO - ####################################################################################################
+2025-01-02 19:01:54,475 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 19:01:54,476 - INFO - Available RAM: 52.50 GB
+2025-01-02 19:01:54,476 - INFO - ####################################################################################################
+2025-01-02 19:01:54,476 - INFO - Building QDrant Client
+2025-01-02 19:01:55,077 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 19:02:04,636 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 19:02:04,636 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 19:02:04,636 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:02:04,636 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:02:04,637 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:02:08,253 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 19:02:08,254 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 19:02:08,254 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 19:02:08,254 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 19:02:08,254 - INFO - Done building SequentialChain.
+2025-01-02 19:02:08,254 - INFO - Workflow:
+2025-01-02 19:02:08,254 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 19:02:08,633 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 19:02:08,936 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:02:09,506 - INFO - Created a temporary directory at /tmp/tmpr3zkw0ag
+2025-01-02 19:02:09,507 - INFO - Writing /tmp/tmpr3zkw0ag/_remote_module_non_scriptable.py
+2025-01-02 19:02:16,028 - INFO - context= On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.
+2025-01-02 19:03:33,419 - INFO - Initializing env vars...
+2025-01-02 19:03:33,419 - INFO - Loading environment variables from: .env
+2025-01-02 19:03:39,719 - INFO - ####################################################################################################
+2025-01-02 19:03:39,755 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 19:03:39,755 - INFO - Available RAM: 52.49 GB
+2025-01-02 19:03:39,755 - INFO - ####################################################################################################
+2025-01-02 19:03:39,755 - INFO - Building QDrant Client
+2025-01-02 19:03:40,340 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 19:03:49,785 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 19:03:49,786 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 19:03:49,786 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:03:49,786 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:03:49,786 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:03:53,381 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 19:03:53,381 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 19:03:53,381 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 19:03:53,381 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 19:03:53,381 - INFO - Done building SequentialChain.
+2025-01-02 19:03:53,381 - INFO - Workflow:
+2025-01-02 19:03:53,381 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 19:03:53,758 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 19:03:54,096 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:03:54,648 - INFO - Created a temporary directory at /tmp/tmp5ckunnas
+2025-01-02 19:03:54,648 - INFO - Writing /tmp/tmp5ckunnas/_remote_module_non_scriptable.py
+2025-01-02 19:04:01,206 - INFO - context= On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.
+2025-01-02 19:43:15,791 - INFO - Initializing env vars...
+2025-01-02 19:43:15,801 - INFO - Loading environment variables from: .env
+2025-01-02 19:43:58,578 - INFO - ####################################################################################################
+2025-01-02 19:43:58,611 - INFO - GPU 0 memory available: 15099 MiB
+2025-01-02 19:43:58,611 - INFO - Available RAM: 52.58 GB
+2025-01-02 19:43:58,611 - INFO - ####################################################################################################
+2025-01-02 19:43:58,611 - INFO - Building QDrant Client
+2025-01-02 19:44:00,926 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-02 19:47:21,712 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 19:47:21,712 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 19:47:21,712 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:47:21,712 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:47:21,719 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 19:47:26,020 - INFO - Building 1/4 - ContextExtractorChain
+2025-01-02 19:47:26,020 - INFO - Building 2/4 - ContextExtractorChain
+2025-01-02 19:47:26,021 - INFO - Building 3/4 - FinancialBotQAChain
+2025-01-02 19:47:26,021 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2025-01-02 19:47:26,021 - INFO - Done building SequentialChain.
+2025-01-02 19:47:26,021 - INFO - Workflow:
+2025-01-02 19:47:26,021 - INFO -
+            [about: str][question: str] > ContextChain >
+            [about: str][question:str] + [context: str] > FinancialChain >
+            [answer: str]
+
+2025-01-02 19:47:26,650 - INFO - Input={'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]}
+2025-01-02 19:47:27,241 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:47:27,785 - INFO - Created a temporary directory at /tmp/tmpxp2ms4mq
+2025-01-02 19:47:27,786 - INFO - Writing /tmp/tmpxp2ms4mq/_remote_module_non_scriptable.py
+2025-01-02 19:47:34,627 - INFO - context= On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in the U.S. and Europe.
+2025-01-02 19:47:35,762 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:47:35,994 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:47:36,328 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:47:37,126 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:47:37,924 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:47:38,421 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:47:38,954 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:47:45,053 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:47:55,655 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:23,149 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:23,649 - INFO - Score={'answer_relevancy': 0.9682, 'context_recall': 0.0000, 'semantic_similarity': 0.8926, 'faithfulness': 0.1000}
+2025-01-02 19:48:23,649 - INFO - Input={'about_me': "I'm a 34 year old entrepreneur.\nI'm interested in growth investments with a long-term horizon.", 'question': 'Do you think investing in Middle Eastern tech startups is a good idea?', 'to_load_history': [['What are the key factors driving the growth of tech startups in the Middle East?', "The growth of tech startups in the Middle East is driven by factors such as increasing internet penetration, a young and tech-savvy population, and government initiatives to support innovation. Additionally, the availability of venture capital and a growing entrepreneurial ecosystem contribute to the region's startup growth."], ['Which Middle Eastern countries are leading in tech startup investments?', 'Countries like the United Arab Emirates, Saudi Arabia, and Israel are leading in tech startup investments in the Middle East. These countries have established themselves as innovation hubs, attracting significant venture capital and fostering a supportive environment for startups.'], ['What are the challenges faced by tech startups in the Middle East?', 'Tech startups in the Middle East face challenges such as regulatory hurdles, limited access to funding, and a competitive market. However, many startups overcome these challenges by leveraging government support, forming strategic partnerships, and focusing on innovation.'], ['How can I identify promising tech startups to invest in?', "To identify promising tech startups to invest in, you can conduct thorough research, attend startup events and pitch competitions, and network with other investors. Additionally, analyzing the startup's business model, market potential, and team can help you make informed investment decisions."], ['Considering the growth factors you mentioned earlier, what should I look for in a Middle Eastern tech startup?', 'Considering the growth factors driving Middle Eastern tech startups, look for startups with strong business models, innovative solutions, and experienced teams. Evaluate their market potential and scalability. Additionally, consider the level of venture capital investment they have received, as it can be an indicator of their growth prospects. By focusing on these factors, you can identify promising startups to invest in.']]}
+2025-01-02 19:48:23,832 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:48:30,661 - INFO - context= Elon Musk-led SpaceX is reportedly raising $750 million in a fresh funding round that wouldvalue the companyat $137 billion.
+2025-01-02 19:48:31,224 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:48:31,541 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:48:31,854 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:32,779 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:33,656 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:33,892 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:48:34,553 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:48:40,586 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:48:52,568 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:49:34,364 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:49:34,873 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.9158, 'faithfulness': 0.0476}
+2025-01-02 19:49:34,873 - INFO - Input={'about_me': "I'm a 30 year old investor.\nI'm intrigued by the growth of renewable energy in emerging markets.", 'question': "What's your take on investing in solar energy projects in Africa?", 'to_load_history': [['What are the benefits of investing in renewable energy projects in Africa?', 'Investing in renewable energy projects in Africa offers benefits such as high growth potential, positive environmental impact, and support for local economies. Additionally, renewable energy projects can provide a stable source of income and help address energy demand in the region.'], ['Which African countries are leading in solar energy investments?', 'Countries like South Africa, Kenya, and Morocco are leading in solar energy investments in Africa. These countries have implemented supportive policies and attracted significant investments in their renewable energy sectors.'], ['What are the risks associated with investing in solar energy projects in Africa?', "Risks associated with investing in solar energy projects in Africa include regulatory challenges, political instability, and infrastructure limitations. It's important to conduct thorough research and work with experienced partners to mitigate these risks."], ['How can I stay informed about renewable energy investment opportunities in Africa?', 'To stay informed about renewable energy investment opportunities in Africa, you can follow industry news, subscribe to renewable energy newsletters, and join investment forums. Additionally, attending renewable energy conferences and networking with industry professionals can provide valuable insights.'], ['Given the benefits you mentioned earlier, how should I approach investing in solar energy projects in Africa?', 'Given the benefits of investing in solar energy projects in Africa, approach your investments with a well-researched strategy. Identify key countries and projects that align with your investment goals. Diversify your investments to spread risk and consider both large-scale and small-scale projects. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the renewable energy sector.']]}
+2025-01-02 19:49:35,042 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:49:45,222 - INFO - context=
+2025-01-02 19:49:46,299 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:49:46,720 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:49:46,868 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:49:47,715 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:49:48,497 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:49:48,773 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:49:49,018 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:50:00,284 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:09,938 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:47,845 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:48,393 - INFO - Score={'answer_relevancy': 0.9860, 'context_recall': 0.0000, 'semantic_similarity': 0.9249, 'faithfulness': 0.0000}
+2025-01-02 19:50:48,393 - INFO - Input={'about_me': "I'm a 35-year-old software engineer with a passion for technology.\nI've been following the stock market for years and want to explore trading strategies.", 'question': 'Should I invest in tech stocks?', 'to_load_history': [['What are the risks associated with investing in tech stocks?', "Investing in tech stocks comes with risks such as market volatility, regulatory changes, and competition within the tech industry. It's important to stay informed about industry trends and diversify your investments to mitigate these risks."], ['Which tech companies are currently performing well?', 'Companies like Apple, Microsoft, and Amazon are currently performing well, with strong earnings reports and innovative product lines. These companies have a solid track record and are well-positioned for future growth.'], ['How can I stay updated on tech stock performance?', 'To stay updated on tech stock performance, you can follow financial news, subscribe to investment newsletters, and use stock market tracking apps. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['What are some successful investment strategies for tech stocks?', "Successful investment strategies for tech stocks include dollar-cost averaging, diversification, and focusing on companies with strong fundamentals and growth potential. It's also important to stay informed about industry trends and be prepared to adjust your strategy as needed."], ['Given the current market conditions, how should I approach investing in tech stocks?', 'Given the current market conditions with strong earnings reports from tech companies and stable interest rates, consider investing in a diversified portfolio of tech stocks. Focus on companies with strong fundamentals and growth potential. Be cautious of potential market volatility caused by global economic uncertainties and trade tensions. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the tech sector.']]}
+2025-01-02 19:50:48,560 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:50:53,632 - INFO - context= The most oversold stocks in the communication services sector presents an opportunity to buy into undervalued companies.
+2025-01-02 19:50:54,458 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:50:54,697 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:50:54,831 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:55,576 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:56,331 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:50:56,544 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:50:56,724 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:51:01,157 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:12,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:48,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:48,875 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8901, 'faithfulness': 0.0476}
+2025-01-02 19:51:48,875 - INFO - Input={'about_me': "I'm a retired financial analyst, and I have a diverse investment portfolio.\nI'm looking for ways to preserve and grow my wealth.", 'question': 'How can I protect my wealth against inflation?', 'to_load_history': [['What are the benefits of investing in precious metals?', 'Investing in precious metals like gold and silver can provide a hedge against inflation and currency devaluation. These assets tend to retain their value over time and can act as a safe haven during economic uncertainty.'], ['How can I diversify my investment portfolio?', 'Diversifying your investment portfolio involves spreading your investments across different asset classes, such as stocks, bonds, real estate, and commodities. This helps to reduce risk and improve the potential for returns.'], ['What are the risks associated with real estate investments?', "Real estate investments can be affected by market fluctuations, changes in interest rates, and economic conditions. It's important to conduct thorough research and consider factors like location, property type, and market trends before investing."], ['How can I stay informed about economic indicators?', 'To stay informed about economic indicators, you can follow financial news, subscribe to economic reports, and use financial analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the rising inflation rates, how should I adjust my investment strategy?', 'Given the rising inflation rates, consider increasing your exposure to assets that can act as a hedge against inflation, such as precious metals and real estate. Diversify your portfolio to spread risk and stay informed about economic indicators to make strategic decisions. By taking a proactive approach, you can protect and grow your wealth in an inflationary environment.']]}
+2025-01-02 19:51:49,041 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:51:52,506 - INFO - context= With inflation at its highest levels in over four decades, many Americans are looking for new alternatives to reclaim their purchasing power and avoid making painful spending cuts.
+2025-01-02 19:51:52,878 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:51:53,212 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:51:53,725 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:54,641 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:55,524 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:51:55,874 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:51:56,140 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:52:04,290 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:09,361 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:43,089 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:43,525 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.6667, 'semantic_similarity': 0.9185, 'faithfulness': 0.1389}
+2025-01-02 19:52:43,525 - INFO - Input={'about_me': "I'm a college student majoring in finance.\nI'm interested in learning about different investment opportunities.", 'question': 'What are the risks of investing in cryptocurrencies?', 'to_load_history': [['How can I start investing in cryptocurrencies?', "To start investing in cryptocurrencies, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying cryptocurrencies. It's important to do your research and understand the risks before investing."], ['What are the benefits of investing in startups?', "Investing in startups can offer high growth potential and the opportunity to support innovative ideas. However, it also comes with high risks, as many startups may fail. It's important to conduct thorough research and consider factors like the startup's business model, market potential, and team before investing."], ['How can I stay updated on investment opportunities?', 'To stay updated on investment opportunities, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are the key factors to consider when investing in the stock market?', "When investing in the stock market, consider factors such as the company's financial health, industry trends, market conditions, and your investment goals. Diversifying your portfolio and staying informed about market trends can help you make informed investment decisions."], ['Given the current market conditions, how should I approach investing in cryptocurrencies?', 'Given the current market conditions with cryptocurrencies gaining mainstream attention and the stock market experiencing a sudden drop, consider starting with a small investment in cryptocurrencies to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of cryptocurrencies while managing risk.']]}
+2025-01-02 19:52:43,882 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:52:45,920 - INFO - context= The cryptocurrency sector was a mess in 2022.
+2025-01-02 19:52:46,413 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:52:46,732 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:52:47,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:48,110 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:49,298 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:52:50,068 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:52:50,508 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:52:59,676 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:53:00,401 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:54:41,073 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:06,901 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:06,905 - ERROR - Exception raised in Job[3]: AttributeError('StringIO' object has no attribute 'statements')
+2025-01-02 19:55:07,171 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8694, 'faithfulness': nan}
+2025-01-02 19:55:07,171 - INFO - Input={'about_me': "I am a 28 year old marketing professional.\nI have some savings and I'm interested in crypto investments.", 'question': 'Is Bitcoin a good investment option?', 'to_load_history': [['What are the risks associated with investing in Bitcoin?', "Investing in Bitcoin comes with risks such as price volatility, regulatory uncertainties, and security concerns. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I start investing in Bitcoin?', "To start investing in Bitcoin, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying Bitcoin. It's important to do your research and understand the risks before investing."], ['What are the benefits of investing in Bitcoin?', 'Investing in Bitcoin can offer high growth potential and the opportunity to diversify your investment portfolio. Bitcoin is considered a store of value and a hedge against inflation. Additionally, the increasing adoption of Bitcoin by institutions and countries can drive its value higher.'], ['How can I stay updated on Bitcoin market trends?', 'To stay updated on Bitcoin market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ["Given the recent fluctuations in Bitcoin's price, how should I approach investing in Bitcoin?", "Given the recent fluctuations in Bitcoin's price and the renewed interest from institutional investors, consider starting with a small investment in Bitcoin to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of Bitcoin while managing risk."]]}
+2025-01-02 19:55:07,321 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:55:13,767 - INFO - context= Shares of several crypto-related stocks includingMarathon Digital HoldingsInc (NASDAQ: MARA),Riot BlockchainInc (NASDAQ: RIOT) andMicroStrategy Inc (NASDAQ:
+2025-01-02 19:55:14,322 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:55:15,017 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:15,044 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:55:15,905 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:16,851 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:17,180 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:55:17,531 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:55:26,969 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:29,542 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:56,459 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:55:56,950 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8523, 'faithfulness': 0.0256}
+2025-01-02 19:55:56,950 - INFO - Input={'about_me': 'I am a 35 year old small business owner.\nI have a moderate risk tolerance and want to diversify my investments.', 'question': 'Should I consider investing in renewable energy stocks?', 'to_load_history': [['What are the benefits of investing in renewable energy stocks?', "Investing in renewable energy stocks can offer high growth potential and the opportunity to support sustainable initiatives. The sector's consistent growth and government support make it an attractive investment option."], ['How can I start investing in renewable energy stocks?', "To start investing in renewable energy stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying renewable energy stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in renewable energy stocks?', "Investing in renewable energy stocks comes with risks such as market volatility, regulatory changes, and competition within the energy sector. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay updated on renewable energy market trends?', 'To stay updated on renewable energy market trends, you can follow financial news, subscribe to renewable energy newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ["Given the government's increased focus on renewable energy, how should I approach investing in renewable energy stocks?", "Given the government's increased focus on renewable energy and the sector's consistent growth, consider starting with a diversified portfolio of renewable energy stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the renewable energy sector."]]}
+2025-01-02 19:55:57,053 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:56:00,122 - INFO - context=
+2025-01-02 19:56:00,602 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:56:01,096 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:56:01,193 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:02,107 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:03,065 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:03,320 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:56:03,701 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:56:07,481 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:13,671 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:34,218 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:56:34,575 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8626, 'faithfulness': 0.0000}
+2025-01-02 19:56:34,575 - INFO - Input={'about_me': "I am a 40 year old healthcare professional planning for my children's education.\nI am risk-averse and prefer stable investment options.", 'question': 'Are bonds or fixed-income securities suitable for my investment goals?', 'to_load_history': [['What are the benefits of investing in government bonds?', 'Investing in government bonds offers benefits such as relative stability, predictable income through interest payments, and lower risk compared to other investments. They are a good option for risk-averse investors looking for stable returns.'], ['How can I diversify my investment portfolio?', 'Diversifying your investment portfolio involves spreading your investments across different asset classes, such as stocks, bonds, real estate, and commodities. This helps to reduce risk and improve the potential for returns.'], ['What are the risks associated with investing in bonds?', "While bonds are generally considered lower risk, they are not risk-free. Risks include interest rate risk, credit risk, and inflation risk. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about bond market trends?', 'To stay informed about bond market trends, you can follow financial news, subscribe to bond market reports, and use financial analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the fluctuations in interest rates, how should I approach investing in bonds?', 'Given the fluctuations in interest rates, consider investing in a mix of short-term and long-term bonds to balance risk and return. Diversify your bond investments across different issuers and sectors to spread risk. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can achieve your investment goals while minimizing risk.']]}
+2025-01-02 19:56:34,751 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:57:11,275 - INFO - context= As the Federal Reserve hiked its policy rate by over four percentage points in 2022to tackle rising inflation, the U.S. Treasury market registered a record annual loss.
+2025-01-02 19:57:11,895 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:57:12,240 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:57:12,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:57:13,768 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:57:16,671 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:57:16,982 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:57:17,389 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:57:23,561 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:57:44,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:58:42,349 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:58:42,922 - INFO - Score={'answer_relevancy': 1.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8918, 'faithfulness': 0.0469}
+2025-01-02 19:58:42,922 - INFO - Input={'about_me': "I am a 31 year old teacher looking to supplement my income through investments.\nI'm interested in real estate but have limited knowledge in this area.", 'question': 'Should I consider real estate investment trusts (REITs)?', 'to_load_history': [['What are the benefits of investing in REITs?', 'Investing in REITs offers benefits such as exposure to real estate assets, income potential through dividends, and the opportunity for capital appreciation. REITs also provide diversification and liquidity, making them an attractive option for investors.'], ['How can I start investing in REITs?', "To start investing in REITs, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying REITs. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in REITs?', "Investing in REITs comes with risks such as market volatility, changes in interest rates, and the performance of the underlying real estate assets. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about REIT market trends?', 'To stay informed about REIT market trends, you can follow financial news, subscribe to real estate investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in REITs?', 'Given the current market conditions with income potential through dividends and capital appreciation, consider starting with a diversified portfolio of REITs. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the real estate market.']]}
+2025-01-02 19:58:43,080 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:58:51,811 - INFO - context= Real estate investment trusts (REITs) were deeply affected by the Federal Reserves actions in 2022, which led to higher interest rates. Even as investors anticipated an eventual lowering later in 2023 or at least by 2024, sellers remained in control of REIT shares all year.
+2025-01-02 19:58:52,302 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:58:52,568 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:58:53,048 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:58:54,024 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:58:54,957 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:58:55,238 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:58:55,548 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:59:04,425 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:09,746 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:49,465 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:49,990 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.9184, 'faithfulness': 0.1000}
+2025-01-02 19:59:49,991 - INFO - Input={'about_me': 'I am a 50 year old entrepreneur planning for retirement.\nI have experience in the tech industry and want to invest in individual stocks.', 'question': 'Should I focus on well-established tech giants or emerging startups?', 'to_load_history': [['What are the benefits of investing in established tech giants?', 'Investing in established tech giants offers benefits such as stability, consistent dividend income, and a proven track record of performance. These companies are typically well-established and have a strong market presence, making them a safer investment option.'], ['What are the benefits of investing in emerging startups?', 'Investing in emerging startups offers the potential for higher growth and significant returns. Startups are often at the forefront of innovation and can capitalize on new market opportunities. However, they also come with higher risk due to their early-stage nature.'], ['How can I balance my portfolio between tech giants and startups?', 'To balance your portfolio, allocate a portion of your investments to established tech giants for stability and dividend income, and another portion to emerging startups for growth potential. Diversify across different tech sectors to spread risk and improve the potential for returns.'], ['What are the risks associated with investing in tech startups?', "Investing in tech startups comes with risks such as market volatility, competition, and the potential for failure. Startups may face challenges in scaling their business and achieving profitability. It's important to conduct thorough research and understand the risks before investing."], ['Given my experience in the tech industry, how should I approach investing in individual stocks?', 'Given your experience in the tech industry, leverage your knowledge to identify promising investment opportunities. Diversify your portfolio across both established tech giants and emerging startups to balance stability and growth potential. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can achieve your investment goals while managing risk.']]}
+2025-01-02 19:59:50,139 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 19:59:54,289 - INFO - context= SalesforceInc (NYSE: CRM) shares are trading higher Wednesday following reports the company will lay off approximately 10% of its workforce.
+2025-01-02 19:59:54,749 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:59:55,125 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:59:55,673 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:56,734 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:57,769 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 19:59:57,988 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:59:58,337 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 19:59:59,495 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:25,286 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:25,838 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:25,840 - WARNING - No statements were generated from the answer.
+2025-01-02 20:01:26,369 - INFO - Score={'answer_relevancy': 1.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8892, 'faithfulness': nan}
+2025-01-02 20:01:26,369 - INFO - Input={'about_me': 'I am a 26 year old graphic designer with a passion for sustainable living.\nI want to align my investments with my values.', 'question': 'Are impact investing and socially responsible funds suitable options for me?', 'to_load_history': [['What are the benefits of impact investing?', 'Impact investing offers benefits such as aligning your investments with your values, supporting companies that contribute positively to social and environmental issues, and potentially achieving competitive financial returns. It allows you to make a positive impact while growing your wealth.'], ['How can I start impact investing?', 'To start impact investing, you need to identify funds or companies that align with your values and investment goals. Research their holdings, performance, and impact metrics. You can invest through a brokerage account or work with a financial advisor who specializes in ESG and impact investing.'], ['What are the risks associated with impact investing?', "Impact investing comes with risks such as market volatility, potential underperformance compared to traditional investments, and the challenge of accurately assessing the impact of investments. It's important to conduct thorough research and understand the risks before investing."], ['How can I stay informed about impact investing trends?', 'To stay informed about impact investing trends, you can follow financial news, subscribe to ESG and impact investing newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other impact investors can provide valuable insights.'], ['Given my passion for sustainable living, how should I approach impact investing?', 'Given your passion for sustainable living, focus on funds and companies that prioritize environmental sustainability, social responsibility, and good governance practices. Conduct thorough research to ensure their values align with yours. Diversify your investments to spread risk and stay informed about market trends. By taking a thoughtful and informed approach, you can align your investments with your values and achieve your financial goals.']]}
+2025-01-02 20:01:26,503 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:01:30,052 - INFO - context= If there is one tip I have been driving home in 2022 is to let the charts dictate your investing/trading decisions, not the news. As we all know, our media channels are designed to paint a grim picture. The consequences are that people are unclear about how to manage their finances which means your financial future is on the line.
+2025-01-02 20:01:30,502 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:01:30,932 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:01:31,387 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:32,539 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:33,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:33,884 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:01:34,468 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:01:39,291 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:01:47,015 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:17,472 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:17,969 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8788, 'faithfulness': 0.1316}
+2025-01-02 20:02:17,970 - INFO - Input={'about_me': "I am a 34 year old finance professional with a strong analytical background.\nI'm interested in diversifying my portfolio with alternative investments.", 'question': 'Should I explore cryptocurrency investments to achieve this diversification?', 'to_load_history': [['What are the benefits of investing in cryptocurrencies?', 'Investing in cryptocurrencies offers benefits such as high growth potential, diversification, and the opportunity to capitalize on emerging technologies. Cryptocurrencies can provide higher returns compared to traditional investments, but they also come with higher risks.'], ['How can I start investing in cryptocurrencies?', "To start investing in cryptocurrencies, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying cryptocurrencies. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in cryptocurrencies?', "Investing in cryptocurrencies comes with risks such as market volatility, regulatory uncertainties, and security concerns. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about cryptocurrency market trends?', 'To stay informed about cryptocurrency market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in cryptocurrencies?', 'Given the current market conditions with cryptocurrencies gaining recognition as an emerging asset class, consider starting with a small investment in cryptocurrencies to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of cryptocurrencies while managing risk.']]}
+2025-01-02 20:02:18,075 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:02:24,464 - INFO - context= Major cryptocurrencies were seen trading lower on Tuesday evening as the global cryptocurrency market cap dropped 0.2% to $805.9 billion at 7:14 p.m. EST.
+2025-01-02 20:02:24,937 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:02:25,173 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:02:25,727 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:26,684 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:27,603 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:27,814 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:02:28,227 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:02:35,077 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:02:42,792 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:16,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:16,932 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.2500, 'semantic_similarity': 0.8976, 'faithfulness': 0.1500}
+2025-01-02 20:03:16,932 - INFO - Input={'about_me': 'I am a 25 year old software engineer with a stable income.\nI want to start investing in stocks for long-term growth.', 'question': 'Where should I begin?', 'to_load_history': [['What are the benefits of investing in tech stocks?', 'Investing in tech stocks offers benefits such as high growth potential, innovation, and the opportunity to capitalize on technological advancements. Tech stocks have shown strong performance in recent years and can provide significant returns for long-term investors.'], ['How can I start investing in tech stocks?', "To start investing in tech stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying tech stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in tech stocks?', "Investing in tech stocks comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about tech stock market trends?', 'To stay informed about tech stock market trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in tech stocks?', 'Given the current market conditions with tech stocks showing strong growth and market volatility, consider starting with a diversified portfolio of tech stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve long-term growth and protect your investments.']]}
+2025-01-02 20:03:17,047 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:03:25,136 - INFO - context=
+2025-01-02 20:03:25,614 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:03:25,862 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:03:26,773 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:27,648 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:28,626 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:28,816 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:03:29,340 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:03:35,933 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:03:38,910 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:11,093 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:11,680 - INFO - Score={'answer_relevancy': 0.8471, 'context_recall': 0.0000, 'semantic_similarity': 0.8523, 'faithfulness': 0.0000}
+2025-01-02 20:04:11,680 - INFO - Input={'about_me': "I am a 35 year old software engineer.\nI'm looking to invest a lump sum amount for short-term gains.", 'question': "What's your opinion on the recent performance of Tesla?", 'to_load_history': [['What are the benefits of investing in Tesla?', "Investing in Tesla offers benefits such as high growth potential, innovation, and the opportunity to capitalize on the growing electric vehicle market. Tesla's strong brand and leadership in the industry make it an attractive investment option."], ['How can I start investing in Tesla?', "To start investing in Tesla, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying Tesla stock. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in Tesla?', "Investing in Tesla comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ["How can I stay informed about Tesla's market performance?", "To stay informed about Tesla's market performance, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights."], ['Given the current market conditions, how should I approach investing in Tesla?', "Given the current market conditions with Tesla's plans for a new Gigafactory and the surge in electric vehicle sales, consider starting with a diversified portfolio that includes Tesla stock. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the electric vehicle market."]]}
+2025-01-02 20:04:11,840 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:04:17,815 - INFO - context= TeslaInc (NASDAQ: TSLA) shares are trading lower Tuesday after the company reported fourth-quarter delivery numbers that came in belowestimat
+2025-01-02 20:04:18,392 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:18,646 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:19,225 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:20,151 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:21,158 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:21,635 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:22,001 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:25,939 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:30,973 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:49,816 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:50,419 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8800, 'faithfulness': 0.0571}
+2025-01-02 20:04:50,419 - INFO - Input={'about_me': 'I am a 50 year old retiree.\nI want to ensure a stable income through my investments.', 'question': 'Do you think dividend stocks are a good option at this time?', 'to_load_history': [['What are the benefits of investing in dividend stocks?', 'Investing in dividend stocks can provide a steady stream of income, especially during times of low interest rates. Dividend stocks also offer the potential for capital appreciation and can act as a hedge against inflation.'], ['How can I diversify my dividend stock portfolio?', 'To diversify your dividend stock portfolio, consider investing in companies from different sectors and industries. This helps to spread risk and improve the potential for returns. Additionally, focus on companies with a history of consistent dividend payments and strong financial health.'], ['What are the risks associated with dividend stocks?', "Dividend stocks come with risks such as market volatility, dividend cuts, and changes in interest rates. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about dividend stock trends?', 'To stay informed about dividend stock trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in dividend stocks?', 'Given the current market conditions with increased market volatility and low interest rates, consider focusing on dividend stocks with a history of consistent payments and strong financial health. Diversify your portfolio to spread risk and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve your investment goals while minimizing risk.']]}
+2025-01-02 20:04:50,545 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:04:56,308 - INFO - context=
+2025-01-02 20:04:56,832 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:57,147 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:04:57,475 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:58,430 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:59,471 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:04:59,690 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:05:00,084 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:05:08,378 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:09,446 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:40,405 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:40,943 - INFO - Score={'answer_relevancy': 0.0000, 'context_recall': 0.0000, 'semantic_similarity': 0.8780, 'faithfulness': 0.0000}
+2025-01-02 20:05:40,944 - INFO - Input={'about_me': "I am a 29 year old medical student.\nI want to start investing but I'm concerned about market risks.", 'question': "What's your take on stablecoins in the cryptocurrency market?", 'to_load_history': [['What are the benefits of investing in stablecoins?', 'Investing in stablecoins offers benefits such as low volatility, stability, and the ability to hedge against market fluctuations. Stablecoins are also backed by real-world assets, providing a level of security and trust.'], ['How can I start investing in stablecoins?', "To start investing in stablecoins, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying stablecoins. It's important to do your research and understand the risks before investing."], ['What are the risks associated with stablecoins?', "While stablecoins are generally considered lower risk compared to other cryptocurrencies, they are not risk-free. Risks include regulatory uncertainties, potential loss of peg to fiat currency, and security concerns. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about stablecoin market trends?', 'To stay informed about stablecoin market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in stablecoins?', 'Given the current market conditions with stablecoin transactions surpassing $1 trillion and major central banks exploring digital currencies, consider starting with a small investment in stablecoins to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of stablecoins while managing risk.']]}
+2025-01-02 20:05:41,088 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 20:05:45,141 - INFO - context= Bitcoin (CRYPTO: BTC) experienced a tumultuous 2022, with price crashes and crypto collapses making headlines. Yet, this was also a year of immense progress for the world&#39;s largest cryptocurrency.
+2025-01-02 20:05:45,680 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:05:45,990 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:05:46,219 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:47,249 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:48,197 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-02 20:05:48,370 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-02 20:05:48,585 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
