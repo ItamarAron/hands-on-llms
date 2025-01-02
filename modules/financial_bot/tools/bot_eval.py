@@ -72,7 +72,7 @@ def run_local(
             input_payload = {
                 "about_me": elem["about_me"],
                 "question": elem["question"],
-                "to_load_history": [],
+                "to_load_history": elem["history"] if "history" in elem else [],
             }
             output_context = bot.finbot_chain.chains[0].run(input_payload)
             response = bot.answer(**input_payload)

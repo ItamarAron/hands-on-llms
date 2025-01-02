@@ -1,0 +1,339 @@
+2024-12-29 00:48:16,549 - INFO - Initializing env vars...
+2024-12-29 00:48:16,549 - INFO - Loading environment variables from: .env
+2024-12-29 00:48:16,549 - INFO - Python-dotenv could not find configuration file .env.
+2024-12-29 00:52:06,987 - INFO - Initializing env vars...
+2024-12-29 00:52:06,988 - INFO - Loading environment variables from: .env
+2024-12-29 00:55:44,183 - INFO - Initializing env vars...
+2024-12-29 00:55:44,183 - INFO - Loading environment variables from: .env
+2024-12-29 00:55:59,710 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g
+2024-12-29 00:55:59,711 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g/_remote_module_non_scriptable.py
+2024-12-29 00:56:30,009 - INFO - Initializing env vars...
+2024-12-29 00:56:30,010 - INFO - Loading environment variables from: .env
+2024-12-29 00:56:34,514 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0
+2024-12-29 00:56:34,514 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0/_remote_module_non_scriptable.py
+2024-12-28 23:23:41,650 - INFO - Initializing env vars...
+2024-12-28 23:23:41,650 - INFO - Loading environment variables from: .env
+2024-12-28 23:23:57,766 - INFO - NumExpr defaulting to 8 threads.
+2024-12-28 23:24:07,157 - INFO - Created a temporary directory at /tmp/tmpgv7rr0r7
+2024-12-28 23:24:07,157 - INFO - Writing /tmp/tmpgv7rr0r7/_remote_module_non_scriptable.py
+2024-12-28 23:28:10,026 - INFO - Initializing env vars...
+2024-12-28 23:28:10,027 - INFO - Loading environment variables from: .env
+2024-12-28 23:28:13,711 - INFO - NumExpr defaulting to 8 threads.
+2024-12-28 23:28:15,640 - INFO - Created a temporary directory at /tmp/tmp_mh9sylp
+2024-12-28 23:28:15,641 - INFO - Writing /tmp/tmp_mh9sylp/_remote_module_non_scriptable.py
+2024-12-28 23:28:17,076 - INFO - ####################################################################################################
+2024-12-28 23:28:17,113 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-28 23:28:17,113 - INFO - Available RAM: 52.51 GB
+2024-12-28 23:28:17,114 - INFO - ####################################################################################################
+2024-12-28 23:28:17,114 - INFO - Building QDrant Client
+2024-12-28 23:29:57,137 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2024-12-28 23:29:57,137 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2024-12-28 23:29:57,138 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:29:57,138 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:29:57,142 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-28 23:30:01,729 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-28 23:30:01,729 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-28 23:30:01,729 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-28 23:30:01,729 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-28 23:30:01,730 - INFO - Done building SequentialChain.
+2024-12-28 23:30:01,730 - INFO - Workflow:
+2024-12-28 23:30:01,730 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-28 23:30:01,730 - INFO - ####################################################################################################
+2024-12-28 23:30:01,765 - INFO - GPU 0 memory available: 10467 MiB
+2024-12-28 23:30:01,766 - INFO - Available RAM: 52.39 GB
+2024-12-28 23:30:01,766 - INFO - ####################################################################################################
+2024-12-29 00:02:59,845 - INFO - Initializing env vars...
+2024-12-29 00:02:59,848 - INFO - Loading environment variables from: .env
+2024-12-29 00:03:17,061 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:03:25,147 - INFO - Created a temporary directory at /tmp/tmp701niq3t
+2024-12-29 00:03:25,147 - INFO - Writing /tmp/tmp701niq3t/_remote_module_non_scriptable.py
+2024-12-29 00:03:46,021 - INFO - ####################################################################################################
+2024-12-29 00:03:46,061 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:03:46,061 - INFO - Available RAM: 52.59 GB
+2024-12-29 00:03:46,061 - INFO - ####################################################################################################
+2024-12-29 00:03:46,061 - INFO - Building QDrant Client
+2024-12-29 00:03:49,006 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:03:49,006 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:03:49,006 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:03:49,006 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:03:49,007 - INFO - Done building SequentialChain.
+2024-12-29 00:03:49,007 - INFO - Workflow:
+2024-12-29 00:03:49,007 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-29 00:03:49,007 - INFO - ####################################################################################################
+2024-12-29 00:03:49,044 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:03:49,044 - INFO - Available RAM: 52.49 GB
+2024-12-29 00:03:49,044 - INFO - ####################################################################################################
+2024-12-29 00:06:35,243 - INFO - Initializing env vars...
+2024-12-29 00:06:35,243 - INFO - Loading environment variables from: .env
+2024-12-29 00:06:38,950 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:06:40,505 - INFO - Created a temporary directory at /tmp/tmpdphnyqg3
+2024-12-29 00:06:40,506 - INFO - Writing /tmp/tmpdphnyqg3/_remote_module_non_scriptable.py
+2024-12-29 00:06:41,808 - INFO - ####################################################################################################
+2024-12-29 00:06:41,845 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:06:41,845 - INFO - Available RAM: 52.54 GB
+2024-12-29 00:06:41,846 - INFO - ####################################################################################################
+2024-12-29 00:06:41,846 - INFO - Building QDrant Client
+2024-12-29 00:06:42,608 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:06:42,608 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:06:42,609 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:06:42,609 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:06:42,609 - INFO - Done building SequentialChain.
+2024-12-29 00:06:42,609 - INFO - Workflow:
+2024-12-29 00:06:42,609 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-29 00:06:42,609 - INFO - ####################################################################################################
+2024-12-29 00:06:42,645 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:06:42,645 - INFO - Available RAM: 52.44 GB
+2024-12-29 00:06:42,645 - INFO - ####################################################################################################
+2024-12-29 00:15:03,485 - INFO - Initializing env vars...
+2024-12-29 00:15:03,485 - INFO - Loading environment variables from: .env
+2024-12-29 00:15:07,246 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:15:08,732 - INFO - Created a temporary directory at /tmp/tmp80vbhyxa
+2024-12-29 00:15:08,732 - INFO - Writing /tmp/tmp80vbhyxa/_remote_module_non_scriptable.py
+2024-12-29 00:15:09,987 - INFO - ####################################################################################################
+2024-12-29 00:15:10,020 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:15:10,020 - INFO - Available RAM: 52.52 GB
+2024-12-29 00:15:10,020 - INFO - ####################################################################################################
+2024-12-29 00:15:10,020 - INFO - Building QDrant Client
+2024-12-29 00:15:10,787 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:15:10,787 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:15:10,788 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:15:10,788 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:15:10,788 - INFO - Done building SequentialChain.
+2024-12-29 00:15:10,788 - INFO - Workflow:
+2024-12-29 00:15:10,788 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-29 00:15:10,788 - INFO - ####################################################################################################
+2024-12-29 00:15:10,821 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:15:10,821 - INFO - Available RAM: 52.42 GB
+2024-12-29 00:15:10,821 - INFO - ####################################################################################################
+2024-12-29 00:15:10,949 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:17:57,020 - INFO - Initializing env vars...
+2024-12-29 00:17:57,020 - INFO - Loading environment variables from: .env
+2024-12-29 00:18:00,710 - INFO - NumExpr defaulting to 8 threads.
+2024-12-29 00:18:02,247 - INFO - Created a temporary directory at /tmp/tmpvxvz6b5o
+2024-12-29 00:18:02,247 - INFO - Writing /tmp/tmpvxvz6b5o/_remote_module_non_scriptable.py
+2024-12-29 00:18:03,493 - INFO - ####################################################################################################
+2024-12-29 00:18:03,524 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:18:03,525 - INFO - Available RAM: 52.51 GB
+2024-12-29 00:18:03,525 - INFO - ####################################################################################################
+2024-12-29 00:18:03,525 - INFO - Building QDrant Client
+2024-12-29 00:18:04,282 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:18:04,282 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:18:04,283 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:18:04,283 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:18:04,283 - INFO - Done building SequentialChain.
+2024-12-29 00:18:04,283 - INFO - Workflow:
+2024-12-29 00:18:04,283 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-29 00:18:04,283 - INFO - ####################################################################################################
+2024-12-29 00:18:04,299 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:18:04,299 - INFO - Available RAM: 52.42 GB
+2024-12-29 00:18:04,299 - INFO - ####################################################################################################
+2024-12-29 00:18:04,399 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:19:35,304 - INFO - Initializing env vars...
+2024-12-29 00:19:35,304 - INFO - Loading environment variables from: .env
+2024-12-29 00:19:39,993 - INFO - Created a temporary directory at /tmp/tmp_6qbcm50
+2024-12-29 00:19:39,993 - INFO - Writing /tmp/tmp_6qbcm50/_remote_module_non_scriptable.py
+2024-12-29 00:19:41,257 - INFO - ####################################################################################################
+2024-12-29 00:19:41,296 - INFO - GPU 0 memory available: 15099 MiB
+2024-12-29 00:19:41,296 - INFO - Available RAM: 52.47 GB
+2024-12-29 00:19:41,296 - INFO - ####################################################################################################
+2024-12-29 00:19:41,296 - INFO - Building QDrant Client
+2024-12-29 00:21:15,326 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:15,326 - INFO - Loading Lora Confing from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:15,825 - INFO - Loading Peft Model from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2024-12-29 00:21:20,422 - INFO - Building 1/4 - ContextExtractorChain
+2024-12-29 00:21:20,422 - INFO - Building 2/4 - ContextExtractorChain
+2024-12-29 00:21:20,422 - INFO - Building 3/4 - FinancialBotQAChain
+2024-12-29 00:21:20,423 - INFO - Building 4/4 - Connecting chains into SequentialChain
+2024-12-29 00:21:20,423 - INFO - Done building SequentialChain.
+2024-12-29 00:21:20,423 - INFO - Workflow:
+2024-12-29 00:21:20,423 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2024-12-29 00:25:43,723 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:03,967 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:21,532 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2024-12-29 00:26:31,113 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-02 14:00:09,867 - INFO - Initializing env vars...
+2025-01-02 14:00:09,871 - INFO - Loading environment variables from: .env
+2025-01-02 14:00:31,928 - INFO - Created a temporary directory at /tmp/tmp8cil7nuq
+2025-01-02 14:00:31,928 - INFO - Writing /tmp/tmp8cil7nuq/_remote_module_non_scriptable.py
+2025-01-02 14:00:33,276 - INFO - ####################################################################################################
+2025-01-02 14:00:33,336 - INFO - GPU 0 memory available: 15931 MiB
+2025-01-02 14:00:33,336 - INFO - Available RAM: 53.39 GB
+2025-01-02 14:00:33,336 - INFO - ####################################################################################################
+2025-01-02 14:00:33,336 - INFO - Building QDrant Client
+2025-01-02 14:03:50,318 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:50,318 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:50,323 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-02 14:03:54,716 - INFO - Building 1/3 - ContextExtractorChain
+2025-01-02 14:03:54,716 - INFO - Building 2/3 - FinancialBotQAChain
+2025-01-02 14:03:54,716 - INFO - Building 3/3 - Connecting chains into SequentialChain
+2025-01-02 14:03:54,717 - INFO - Done building SequentialChain.
+2025-01-02 14:03:54,717 - INFO - Workflow:
+2025-01-02 14:03:54,717 - INFO - 
+            [about: str][question: str] > ContextChain > 
+            [about: str][question:str] + [context: str] > FinancialChain > 
+            [answer: str]
+            
+2025-01-02 14:03:57,100 - INFO - Use pytorch device: cuda
+2025-01-02 14:03:57,475 - INFO - Use pytorch device: cuda
+2025-01-02 14:04:07,783 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:07,818 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:50,908 - INFO - Use pytorch device: cuda
+2025-01-02 14:04:50,916 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:04:57,500 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:04:57,601 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:04:57,636 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:05:37,483 - INFO - Use pytorch device: cuda
+2025-01-02 14:05:37,488 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:05:41,265 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:05:41,369 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:05:41,413 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:06:20,984 - INFO - Use pytorch device: cuda
+2025-01-02 14:06:20,989 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:06:28,480 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:06:28,574 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:06:28,609 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:08,519 - INFO - Use pytorch device: cuda
+2025-01-02 14:07:08,524 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:07:13,176 - INFO - error_code=None error_message='The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)' error_param=None error_type=server_error message='OpenAI API error received' stream_error=False
+2025-01-02 14:07:13,176 - WARNING - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.) {
+  "error": {
+    "message": "The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)",
+    "type": "server_error",
+    "param": null,
+    "code": null
+  }
+} 500 {'error': {'message': 'The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Thu, 02 Jan 2025 14:07:13 GMT', 'Content-Type': 'application/json', 'Content-Length': '369', 'Connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-processing-ms': '310', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9996', 'x-ratelimit-remaining-tokens': '199378', 'x-ratelimit-reset-requests': '30.466s', 'x-ratelimit-reset-tokens': '186ms', 'x-request-id': 'req_0cd3dd9b1e8ade2d17b923f87c3ed05d', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'CF-Cache-Status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Server': 'cloudflare', 'CF-RAY': '8fbb50684f3e1ca7-AMS', 'alt-svc': 'h3=":443"; ma=86400'}.
+2025-01-02 14:07:18,104 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:07:18,204 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:18,239 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:07:59,943 - INFO - Use pytorch device: cuda
+2025-01-02 14:07:59,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:08:06,103 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.4545, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:08:06,200 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:06,232 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:49,402 - INFO - Use pytorch device: cuda
+2025-01-02 14:08:49,408 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:08:58,298 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1579, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:08:58,416 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:08:58,450 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:09:41,722 - INFO - Use pytorch device: cuda
+2025-01-02 14:09:41,727 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:09:48,778 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:09:48,880 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:09:48,912 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:10:30,188 - INFO - Use pytorch device: cuda
+2025-01-02 14:10:30,193 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:10:36,561 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:10:36,654 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:10:36,687 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:11:19,587 - INFO - Use pytorch device: cuda
+2025-01-02 14:11:19,592 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:11:26,689 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.2143, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:11:26,751 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:11:26,784 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:09,494 - INFO - Use pytorch device: cuda
+2025-01-02 14:12:09,500 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:12:15,407 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.3636, 'context_recall': 0.8000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:12:15,468 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:15,499 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:12:57,362 - INFO - Use pytorch device: cuda
+2025-01-02 14:12:57,368 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:13:04,767 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:13:04,861 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:04,893 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:45,922 - INFO - Use pytorch device: cuda
+2025-01-02 14:13:45,927 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:13:50,765 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:13:50,824 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:13:50,866 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:14:34,535 - INFO - Use pytorch device: cuda
+2025-01-02 14:14:34,541 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:14:39,347 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.5000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:14:39,453 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:14:39,487 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:15:19,962 - INFO - Use pytorch device: cuda
+2025-01-02 14:15:19,967 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:15:24,445 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.2000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:15:24,515 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:15:24,549 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:07,314 - INFO - Use pytorch device: cuda
+2025-01-02 14:16:07,319 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:16:14,125 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:16:14,189 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:14,226 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:16:55,352 - INFO - Use pytorch device: cuda
+2025-01-02 14:16:55,357 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:16:59,865 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:16:59,969 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:00,001 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:44,026 - INFO - Use pytorch device: cuda
+2025-01-02 14:17:44,032 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:17:51,355 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:17:51,420 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:17:51,449 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:18:34,228 - INFO - Use pytorch device: cuda
+2025-01-02 14:18:34,233 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:18:39,534 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1667, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-02 14:18:39,627 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:18:39,659 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:19:21,944 - INFO - Use pytorch device: cuda
+2025-01-02 14:19:21,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:19:27,822 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:19:27,884 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:19:27,925 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:08,730 - INFO - Use pytorch device: cuda
+2025-01-02 14:20:08,735 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:20:14,742 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:20:15,045 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:15,080 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:20:58,340 - INFO - Use pytorch device: cuda
+2025-01-02 14:20:58,345 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:21:04,065 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:21:04,357 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:04,390 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:46,383 - INFO - Use pytorch device: cuda
+2025-01-02 14:21:46,388 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:21:50,185 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:21:50,467 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:21:50,500 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:22:32,818 - INFO - Use pytorch device: cuda
+2025-01-02 14:22:32,823 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:22:39,352 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:22:39,425 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:22:39,461 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:23:22,192 - INFO - Use pytorch device: cuda
+2025-01-02 14:23:22,197 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:23:28,460 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.5000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
+2025-01-02 14:23:28,571 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:23:28,606 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
+2025-01-02 14:24:11,281 - INFO - Use pytorch device: cuda
+2025-01-02 14:24:11,286 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
+2025-01-02 14:24:17,443 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
