@@ -151,8 +151,7 @@ class FinancialBotQAChain(Chain):
     def input_keys(self) -> List[str]:
         """Returns a list of input keys for the chain"""
 
-        return []
-
+        return ["context",compressed_history_key]
 
     @property
     def output_keys(self) -> List[str]:
@@ -186,6 +185,8 @@ class FinancialBotQAChain(Chain):
         response = self.hf_pipeline(prompt["prompt"])
         end_time = time.time()
         duration_milliseconds = (end_time - start_time) * 1000
+        logger.info("type of response: %s", type(response))
+        logger.info(f"Model response for Question: %s\n \n%s",question, response)
 
         if run_manager:
             run_manager.on_chain_end(

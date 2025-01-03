@@ -180,9 +180,9 @@ def run_local(
     """
 
     if debug is True:
-        bot = load_bot_dev()
+        bot = load_bot_dev(model_cache_dir=None)
     else:
-        bot = load_bot()
+        bot = load_bot(model_cache_dir=None)
 
     inputs = {
         "about_me": about_me,

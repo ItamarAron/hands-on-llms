@@ -164,6 +164,8 @@ def build_huggingface_pipeline(
         temperature=temperature,
         streamer=streamer,
         stopping_criteria=stopping_criteria,
+        return_full_text=False,
+        model_kwargs={"return_full_text": "false", "include_prompt_in_result": "false"}
     )
     hf = HuggingFacePipeline(pipeline=pipe)
 
@@ -207,7 +209,8 @@ def build_qlora_model(
         quantization_config=bnb_config,
         device_map="auto",
         trust_remote_code=False,
-        cache_dir=str(cache_dir) if cache_dir else None,
+        cache_dir=str(cache_dir) if cache_dir else None
+
     )
 
     tokenizer = AutoTokenizer.from_pretrained(

@@ -146,7 +146,8 @@ class FinancialBot:
                                                                           hf_pipeline=self._llm_agent,
                                                                           template=self._llm_template,
                                                                           callbacks=callbacks
-                                                                          ) for i in range(3)},
+                                                                          ) | (lambda x: x["answer"]) for i in
+                                       range(3)},
                                     "question": lambda x: x["context"]["question"],
                                     "context": lambda x: x["context"]["context"]}
 
@@ -160,7 +161,7 @@ class FinancialBot:
             "Answer #1: {answer_0}\n"
             "Answer #2: {answer_1}\n"
             "Answer #3: {answer_2}\n"
-            "Your output should be only the text of the chosen answer"
+            "Your output should be only the text of the chosen answer and nothing else"
         )
 
         choose_response_chain = {"answer": PromptTemplate.from_template(pick_best_template) | llm | StrOutputParser(),
@@ -229,7 +230,7 @@ class FinancialBot:
             "to_load_history": to_load_history if to_load_history else [],
         }
         response = self.finbot_chain.invoke(inputs)
-
+        logger.info("financial bot response: %s", response)
         return response
 
     def stream_answer(self) -> Iterable[str]:
