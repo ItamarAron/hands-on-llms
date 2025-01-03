@@ -50,7 +50,7 @@ def run_local(
         answer_correctness,
         answer_similarity,
         #context_entity_recall,
-        context_recall,
+        #context_recall,
         #context_relevancy,
         #context_utilization,
         faithfulness,
@@ -60,7 +60,7 @@ def run_local(
     metrics = [
         #context_utilization,
         answer_relevancy,
-        context_recall,
+        #context_recall,
         answer_similarity,
         #context_entity_recall,
         #answer_correctness,
@@ -75,12 +75,10 @@ def run_local(
                 "question": elem["question"],
                 "to_load_history": elem["history"] if "history" in elem else [],
             }
-            logger.info("Input=%s", input_payload)
-
             response = bot.answer(**input_payload)
 
-            context = response["context"]["context"]
-            logging.info("context= %s", context)
+            context = response["context"]
+            logging.info('{"input": %s ,\n"context": %s \n"answer": %s',input_payload, context, response["answer"])
             logger.info("Score=%s", evaluate_w_ragas(query=elem["question"], context=context.split('\n'), output=response["answer"], ground_truth=elem["response"], metrics=metrics))
 
     return response

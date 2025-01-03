@@ -83,6 +83,8 @@ class MockedPipeline:
 
     task: str = "text-generation"
 
+    model = None
+
     def __init__(self, f: Callable[[str], str]):
         self.f = f
 
@@ -102,5 +104,6 @@ class MockedPipeline:
         """
 
         result = self.f(prompt)
+
 
         return [{"generated_text": f"{prompt}{result}"}]

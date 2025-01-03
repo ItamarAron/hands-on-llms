@@ -1,3 +1,4 @@
+import logging
 import time
 from typing import Any, Dict, List, Optional
 
@@ -20,6 +21,7 @@ from llmlingua import PromptCompressor
 
 history_input_key: str = "to_load_history"
 compressed_history_key: str = "compressed_history"
+logger = logging.getLogger(__name__)
 
 class CompressHistoryChain(Chain):
     """This custom chain handles LLM generation upon given prompt"""
@@ -140,14 +142,17 @@ class ContextExtractorChain(Chain):
 class FinancialBotQAChain(Chain):
     """This custom chain handles LLM generation upon given prompt"""
 
+    question_number: int
     hf_pipeline: HuggingFacePipeline
     template: PromptTemplate
+
 
     @property
     def input_keys(self) -> List[str]:
         """Returns a list of input keys for the chain"""
 
-        return ["context",compressed_history_key]
+        return []
+
 
     @property
     def output_keys(self) -> List[str]:
@@ -162,6 +167,9 @@ class FinancialBotQAChain(Chain):
     ) -> Dict[str, Any]:
         """Calls the chain with the given inputs and returns the output"""
 
+        logger.info("Model inputs: %s", inputs)
+
+        question = inputs["rephrased_questions"]["rephrased_questions"][self.question_number]
         compressed_history = inputs[compressed_history_key][compressed_history_key]
         inputs = inputs["context"]
         inputs = self.clean(inputs)
@@ -170,7 +178,7 @@ class FinancialBotQAChain(Chain):
                 "user_context": inputs["about_me"],
                 "news_context": inputs["context"],
                 "chat_history": compressed_history,
-                "question": inputs["question"],
+                "question": question,
             }
         )
 

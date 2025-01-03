@@ -1,21 +1,28 @@
 import logging
 import os
 from pathlib import Path
-from typing import Iterable, List, Tuple, Dict, Any
+from typing import Iterable, List, Tuple
 
-from langchain_core.runnables import RunnableSequence
+from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_core.runnables import Runnable, RunnableSequence
+# ADDED IMPORT
+from langchain_openai import ChatOpenAI
 
 from financial_bot import constants
 from financial_bot.chains import (
     CompressHistoryChain,
     ContextExtractorChain,
-    FinancialBotQAChain,
+    FinancialBotQAChain, compressed_history_key,
 )
 from financial_bot.embeddings import EmbeddingModelSingleton
 from financial_bot.handlers import CometLLMMonitoringHandler
 from financial_bot.models import build_huggingface_pipeline
 from financial_bot.qdrant import build_qdrant_client
 from financial_bot.template import get_llm_template
+
+# set_verbose(True)
+# set_debug(True)
 
 logger = logging.getLogger(__name__)
 
@@ -85,7 +92,7 @@ class FinancialBot:
     def is_streaming(self) -> bool:
         return self._streamer is not None
 
-    def build_chain(self)  -> RunnableSequence[Dict[str, Any], Dict[str, Any]]:
+    def build_chain(self) -> Runnable:
         """
         Constructs and returns a financial bot chain.
         This chain is designed to take as input the user description, `about_me` and a `question` and it will
@@ -115,9 +122,16 @@ class FinancialBot:
         [answer: str]
         """
 
-        logger.info("Building 1/4 - ContextExtractorChain")
+        llm = ChatOpenAI(model_name="gpt-4o-mini")
+        json_llm: Runnable = llm.bind(response_format={"type": "json_object"})
+        rephrase_template: Runnable = PromptTemplate.from_template("Question: {question} "
+                                                                   "Given the above question, rephrase and expand it to help you do better answering."
+                                                                   "Maintain all information in the original question."
+                                                                   "give 3 different options."
+                                                                   "return JSON object with key 'rephrased_questions' and a value with array of the rephrased questions.")
 
-        logger.info("Building 2/4 - ContextExtractorChain")
+        rephrase_question_chain = rephrase_template | json_llm | JsonOutputParser()
+
         context_retrieval_chain = ContextExtractorChain(
             embedding_model=self._embd_model,
             vector_store=self._qdrant_client,
@@ -126,37 +140,35 @@ class FinancialBot:
         )
 
         logger.info("Building 3/4 - FinancialBotQAChain")
-        if self._debug:
-            callabacks = []
-        else:
-            try:
-                comet_project_name = os.environ["COMET_PROJECT_NAME"]
-            except KeyError:
-                raise RuntimeError(
-                    "Please set the COMET_PROJECT_NAME environment variable."
-                )
-            callabacks = [
-                CometLLMMonitoringHandler(
-                    project_name=f"{comet_project_name}-monitor-prompts",
-                    llm_model_id=self._llm_model_id,
-                    llm_qlora_model_id=self._llm_qlora_model_id,
-                    llm_inference_max_new_tokens=self._llm_inference_max_new_tokens,
-                    llm_inference_temperature=self._llm_inference_temperature,
-                )
-            ]
-        llm_generator_chain = FinancialBotQAChain(
-            hf_pipeline=self._llm_agent,
-            template=self._llm_template,
-            callbacks=callabacks,
+        callbacks = self.get_callbacks()
+
+        composite_generate_chain = {**{f"answer_{i}": FinancialBotQAChain(question_number=i,
+                                                                          hf_pipeline=self._llm_agent,
+                                                                          template=self._llm_template,
+                                                                          callbacks=callbacks
+                                                                          ) for i in range(3)},
+                                    "question": lambda x: x["context"]["question"],
+                                    "context": lambda x: x["context"]["context"]}
+
+        preparation_chain = {compressed_history_key: CompressHistoryChain(),
+                             "context": context_retrieval_chain,
+                             "rephrased_questions": rephrase_question_chain}
+
+        pick_best_template = (
+            'Given this question: "{question}"'
+            "From the answers below, read them carefully and choose the one that might be considered the best overall."
+            "Answer #1: {answer_0}\n"
+            "Answer #2: {answer_1}\n"
+            "Answer #3: {answer_2}\n"
+            "Your output should be only the text of the chosen answer"
         )
 
-        logger.info("Building 4/4 - Connecting chains into SequentialChain")
+        choose_response_chain = {"answer": PromptTemplate.from_template(pick_best_template) | llm | StrOutputParser(),
+                                 "context": lambda x: x["context"]}
 
-        preparation_chain = {"compressed_history": CompressHistoryChain(),
-                             "context": context_retrieval_chain, }
+        seq_chain = RunnableSequence(preparation_chain, composite_generate_chain, choose_response_chain)
 
-        seq_chain = preparation_chain | llm_generator_chain
-
+        logger.info("seq_chain: %s", seq_chain)
         logger.info("Done building SequentialChain.")
         logger.info("Workflow:")
         logger.info(
@@ -168,13 +180,32 @@ class FinancialBot:
         )
         return seq_chain
 
+    def get_callbacks(self):
+        if self._debug:
+            return []
+        else:
+            try:
+                comet_project_name = os.environ["COMET_PROJECT_NAME"]
+            except KeyError:
+                raise RuntimeError(
+                    "Please set the COMET_PROJECT_NAME environment variable."
+                )
+            return [
+                CometLLMMonitoringHandler(
+                    project_name=f"{comet_project_name}-monitor-prompts",
+                    llm_model_id=self._llm_model_id,
+                    llm_qlora_model_id=self._llm_qlora_model_id,
+                    llm_inference_max_new_tokens=self._llm_inference_max_new_tokens,
+                    llm_inference_temperature=self._llm_inference_temperature,
+                )
+            ]
 
     def answer(
-        self,
-        about_me: str,
-        question: str,
-        to_load_history: List[Tuple[str, str]] = None,
-    ) -> dict[str,Any]:
+            self,
+            about_me: str,
+            question: str,
+            to_load_history: List[Tuple[str, str]] = None,
+    ) -> str:
         """
         Given a short description about the user and a question make the LLM
         generate a response.
@@ -198,6 +229,7 @@ class FinancialBot:
             "to_load_history": to_load_history if to_load_history else [],
         }
         response = self.finbot_chain.invoke(inputs)
+
         return response
 
     def stream_answer(self) -> Iterable[str]:

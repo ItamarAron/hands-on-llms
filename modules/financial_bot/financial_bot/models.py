@@ -132,6 +132,7 @@ def build_huggingface_pipeline(
     if debug is True:
         return (
             HuggingFacePipeline(
+                model_id= "gpt2",
                 pipeline=MockedPipeline(f=lambda _: "You are doing great!")
             ),
             None,
