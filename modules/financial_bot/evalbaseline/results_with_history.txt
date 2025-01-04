@@ -1,339 +1,477 @@
-2024-12-29 00:48:16,549 - INFO - Initializing env vars...
-2024-12-29 00:48:16,549 - INFO - Loading environment variables from: .env
-2024-12-29 00:48:16,549 - INFO - Python-dotenv could not find configuration file .env.
-2024-12-29 00:52:06,987 - INFO - Initializing env vars...
-2024-12-29 00:52:06,988 - INFO - Loading environment variables from: .env
-2024-12-29 00:55:44,183 - INFO - Initializing env vars...
-2024-12-29 00:55:44,183 - INFO - Loading environment variables from: .env
-2024-12-29 00:55:59,710 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g
-2024-12-29 00:55:59,711 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmptxoxrn5g/_remote_module_non_scriptable.py
-2024-12-29 00:56:30,009 - INFO - Initializing env vars...
-2024-12-29 00:56:30,010 - INFO - Loading environment variables from: .env
-2024-12-29 00:56:34,514 - INFO - Created a temporary directory at /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0
-2024-12-29 00:56:34,514 - INFO - Writing /var/folders/dd/_yvn0tv5639bnx91cd2py_cw0000gn/T/tmppvej5wv0/_remote_module_non_scriptable.py
-2024-12-28 23:23:41,650 - INFO - Initializing env vars...
-2024-12-28 23:23:41,650 - INFO - Loading environment variables from: .env
-2024-12-28 23:23:57,766 - INFO - NumExpr defaulting to 8 threads.
-2024-12-28 23:24:07,157 - INFO - Created a temporary directory at /tmp/tmpgv7rr0r7
-2024-12-28 23:24:07,157 - INFO - Writing /tmp/tmpgv7rr0r7/_remote_module_non_scriptable.py
-2024-12-28 23:28:10,026 - INFO - Initializing env vars...
-2024-12-28 23:28:10,027 - INFO - Loading environment variables from: .env
-2024-12-28 23:28:13,711 - INFO - NumExpr defaulting to 8 threads.
-2024-12-28 23:28:15,640 - INFO - Created a temporary directory at /tmp/tmp_mh9sylp
-2024-12-28 23:28:15,641 - INFO - Writing /tmp/tmp_mh9sylp/_remote_module_non_scriptable.py
-2024-12-28 23:28:17,076 - INFO - ####################################################################################################
-2024-12-28 23:28:17,113 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-28 23:28:17,113 - INFO - Available RAM: 52.51 GB
-2024-12-28 23:28:17,114 - INFO - ####################################################################################################
-2024-12-28 23:28:17,114 - INFO - Building QDrant Client
-2024-12-28 23:29:57,137 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
-2024-12-28 23:29:57,137 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
-2024-12-28 23:29:57,138 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-28 23:29:57,138 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-28 23:29:57,142 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-28 23:30:01,729 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-28 23:30:01,729 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-28 23:30:01,729 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-28 23:30:01,729 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-28 23:30:01,730 - INFO - Done building SequentialChain.
-2024-12-28 23:30:01,730 - INFO - Workflow:
-2024-12-28 23:30:01,730 - INFO - 
+2025-01-04 21:18:57,614 - INFO - Initializing env vars...
+2025-01-04 21:18:57,615 - INFO - Loading environment variables from: .env
+2025-01-04 21:19:02,729 - INFO - ####################################################################################################
+2025-01-04 21:19:02,770 - INFO - GPU 0 memory available: 15931 MiB
+2025-01-04 21:19:02,771 - INFO - Available RAM: 53.33 GB
+2025-01-04 21:19:02,771 - INFO - ####################################################################################################
+2025-01-04 21:19:02,771 - INFO - Building QDrant Client
+2025-01-04 21:19:04,071 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-01-04 21:19:14,045 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
+2025-01-04 21:19:14,046 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
+2025-01-04 21:19:14,046 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-04 21:19:14,046 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-04 21:19:14,046 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
+2025-01-04 21:19:17,701 - INFO - Building 1/3 - ContextExtractorChain
+2025-01-04 21:19:17,701 - INFO - Building 2/3 - FinancialBotQAChain
+2025-01-04 21:19:17,701 - INFO - Building 3/3 - Connecting chains into SequentialChain
+2025-01-04 21:19:18,065 - INFO - Done building SequentialChain.
+2025-01-04 21:19:18,065 - INFO - Workflow:
+2025-01-04 21:19:18,066 - INFO - 
             [about: str][question: str] > ContextChain > 
             [about: str][question:str] + [context: str] > FinancialChain > 
             [answer: str]
             
-2024-12-28 23:30:01,730 - INFO - ####################################################################################################
-2024-12-28 23:30:01,765 - INFO - GPU 0 memory available: 10467 MiB
-2024-12-28 23:30:01,766 - INFO - Available RAM: 52.39 GB
-2024-12-28 23:30:01,766 - INFO - ####################################################################################################
-2024-12-29 00:02:59,845 - INFO - Initializing env vars...
-2024-12-29 00:02:59,848 - INFO - Loading environment variables from: .env
-2024-12-29 00:03:17,061 - INFO - NumExpr defaulting to 8 threads.
-2024-12-29 00:03:25,147 - INFO - Created a temporary directory at /tmp/tmp701niq3t
-2024-12-29 00:03:25,147 - INFO - Writing /tmp/tmp701niq3t/_remote_module_non_scriptable.py
-2024-12-29 00:03:46,021 - INFO - ####################################################################################################
-2024-12-29 00:03:46,061 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:03:46,061 - INFO - Available RAM: 52.59 GB
-2024-12-29 00:03:46,061 - INFO - ####################################################################################################
-2024-12-29 00:03:46,061 - INFO - Building QDrant Client
-2024-12-29 00:03:49,006 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-29 00:03:49,006 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-29 00:03:49,006 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-29 00:03:49,006 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-29 00:03:49,007 - INFO - Done building SequentialChain.
-2024-12-29 00:03:49,007 - INFO - Workflow:
-2024-12-29 00:03:49,007 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2024-12-29 00:03:49,007 - INFO - ####################################################################################################
-2024-12-29 00:03:49,044 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:03:49,044 - INFO - Available RAM: 52.49 GB
-2024-12-29 00:03:49,044 - INFO - ####################################################################################################
-2024-12-29 00:06:35,243 - INFO - Initializing env vars...
-2024-12-29 00:06:35,243 - INFO - Loading environment variables from: .env
-2024-12-29 00:06:38,950 - INFO - NumExpr defaulting to 8 threads.
-2024-12-29 00:06:40,505 - INFO - Created a temporary directory at /tmp/tmpdphnyqg3
-2024-12-29 00:06:40,506 - INFO - Writing /tmp/tmpdphnyqg3/_remote_module_non_scriptable.py
-2024-12-29 00:06:41,808 - INFO - ####################################################################################################
-2024-12-29 00:06:41,845 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:06:41,845 - INFO - Available RAM: 52.54 GB
-2024-12-29 00:06:41,846 - INFO - ####################################################################################################
-2024-12-29 00:06:41,846 - INFO - Building QDrant Client
-2024-12-29 00:06:42,608 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-29 00:06:42,608 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-29 00:06:42,609 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-29 00:06:42,609 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-29 00:06:42,609 - INFO - Done building SequentialChain.
-2024-12-29 00:06:42,609 - INFO - Workflow:
-2024-12-29 00:06:42,609 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2024-12-29 00:06:42,609 - INFO - ####################################################################################################
-2024-12-29 00:06:42,645 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:06:42,645 - INFO - Available RAM: 52.44 GB
-2024-12-29 00:06:42,645 - INFO - ####################################################################################################
-2024-12-29 00:15:03,485 - INFO - Initializing env vars...
-2024-12-29 00:15:03,485 - INFO - Loading environment variables from: .env
-2024-12-29 00:15:07,246 - INFO - NumExpr defaulting to 8 threads.
-2024-12-29 00:15:08,732 - INFO - Created a temporary directory at /tmp/tmp80vbhyxa
-2024-12-29 00:15:08,732 - INFO - Writing /tmp/tmp80vbhyxa/_remote_module_non_scriptable.py
-2024-12-29 00:15:09,987 - INFO - ####################################################################################################
-2024-12-29 00:15:10,020 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:15:10,020 - INFO - Available RAM: 52.52 GB
-2024-12-29 00:15:10,020 - INFO - ####################################################################################################
-2024-12-29 00:15:10,020 - INFO - Building QDrant Client
-2024-12-29 00:15:10,787 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-29 00:15:10,787 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-29 00:15:10,788 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-29 00:15:10,788 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-29 00:15:10,788 - INFO - Done building SequentialChain.
-2024-12-29 00:15:10,788 - INFO - Workflow:
-2024-12-29 00:15:10,788 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2024-12-29 00:15:10,788 - INFO - ####################################################################################################
-2024-12-29 00:15:10,821 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:15:10,821 - INFO - Available RAM: 52.42 GB
-2024-12-29 00:15:10,821 - INFO - ####################################################################################################
-2024-12-29 00:15:10,949 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2024-12-29 00:17:57,020 - INFO - Initializing env vars...
-2024-12-29 00:17:57,020 - INFO - Loading environment variables from: .env
-2024-12-29 00:18:00,710 - INFO - NumExpr defaulting to 8 threads.
-2024-12-29 00:18:02,247 - INFO - Created a temporary directory at /tmp/tmpvxvz6b5o
-2024-12-29 00:18:02,247 - INFO - Writing /tmp/tmpvxvz6b5o/_remote_module_non_scriptable.py
-2024-12-29 00:18:03,493 - INFO - ####################################################################################################
-2024-12-29 00:18:03,524 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:18:03,525 - INFO - Available RAM: 52.51 GB
-2024-12-29 00:18:03,525 - INFO - ####################################################################################################
-2024-12-29 00:18:03,525 - INFO - Building QDrant Client
-2024-12-29 00:18:04,282 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-29 00:18:04,282 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-29 00:18:04,283 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-29 00:18:04,283 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-29 00:18:04,283 - INFO - Done building SequentialChain.
-2024-12-29 00:18:04,283 - INFO - Workflow:
-2024-12-29 00:18:04,283 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2024-12-29 00:18:04,283 - INFO - ####################################################################################################
-2024-12-29 00:18:04,299 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:18:04,299 - INFO - Available RAM: 52.42 GB
-2024-12-29 00:18:04,299 - INFO - ####################################################################################################
-2024-12-29 00:18:04,399 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2024-12-29 00:19:35,304 - INFO - Initializing env vars...
-2024-12-29 00:19:35,304 - INFO - Loading environment variables from: .env
-2024-12-29 00:19:39,993 - INFO - Created a temporary directory at /tmp/tmp_6qbcm50
-2024-12-29 00:19:39,993 - INFO - Writing /tmp/tmp_6qbcm50/_remote_module_non_scriptable.py
-2024-12-29 00:19:41,257 - INFO - ####################################################################################################
-2024-12-29 00:19:41,296 - INFO - GPU 0 memory available: 15099 MiB
-2024-12-29 00:19:41,296 - INFO - Available RAM: 52.47 GB
-2024-12-29 00:19:41,296 - INFO - ####################################################################################################
-2024-12-29 00:19:41,296 - INFO - Building QDrant Client
-2024-12-29 00:21:15,326 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
-2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
-2024-12-29 00:21:15,326 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-29 00:21:15,326 - INFO - Loading Lora Confing from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-29 00:21:15,825 - INFO - Loading Peft Model from: model_cache/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2024-12-29 00:21:20,422 - INFO - Building 1/4 - ContextExtractorChain
-2024-12-29 00:21:20,422 - INFO - Building 2/4 - ContextExtractorChain
-2024-12-29 00:21:20,422 - INFO - Building 3/4 - FinancialBotQAChain
-2024-12-29 00:21:20,423 - INFO - Building 4/4 - Connecting chains into SequentialChain
-2024-12-29 00:21:20,423 - INFO - Done building SequentialChain.
-2024-12-29 00:21:20,423 - INFO - Workflow:
-2024-12-29 00:21:20,423 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2024-12-29 00:25:43,723 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2024-12-29 00:26:03,967 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2024-12-29 00:26:21,532 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2024-12-29 00:26:31,113 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
-2025-01-02 14:00:09,867 - INFO - Initializing env vars...
-2025-01-02 14:00:09,871 - INFO - Loading environment variables from: .env
-2025-01-02 14:00:31,928 - INFO - Created a temporary directory at /tmp/tmp8cil7nuq
-2025-01-02 14:00:31,928 - INFO - Writing /tmp/tmp8cil7nuq/_remote_module_non_scriptable.py
-2025-01-02 14:00:33,276 - INFO - ####################################################################################################
-2025-01-02 14:00:33,336 - INFO - GPU 0 memory available: 15931 MiB
-2025-01-02 14:00:33,336 - INFO - Available RAM: 53.39 GB
-2025-01-02 14:00:33,336 - INFO - ####################################################################################################
-2025-01-02 14:00:33,336 - INFO - Building QDrant Client
-2025-01-02 14:03:50,318 - INFO - Downloading iusztinpaul/fin-falcon-7b-lora:1.0.5 from CometML Model Registry:
-2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' already downloaded to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5
-2025-01-02 14:03:50,318 - INFO - Model model_id='iusztinpaul/fin-falcon-7b-lora:1.0.5' downloaded from the registry to: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2025-01-02 14:03:50,318 - INFO - Loading Lora Confing from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2025-01-02 14:03:50,323 - INFO - Loading Peft Model from: /home/student/.cache/hands-on-llms/models/iusztinpaul/fin-falcon-7b-lora:1.0.5/checkpoint-35
-2025-01-02 14:03:54,716 - INFO - Building 1/3 - ContextExtractorChain
-2025-01-02 14:03:54,716 - INFO - Building 2/3 - FinancialBotQAChain
-2025-01-02 14:03:54,716 - INFO - Building 3/3 - Connecting chains into SequentialChain
-2025-01-02 14:03:54,717 - INFO - Done building SequentialChain.
-2025-01-02 14:03:54,717 - INFO - Workflow:
-2025-01-02 14:03:54,717 - INFO - 
-            [about: str][question: str] > ContextChain > 
-            [about: str][question:str] + [context: str] > FinancialChain > 
-            [answer: str]
-            
-2025-01-02 14:03:57,100 - INFO - Use pytorch device: cuda
-2025-01-02 14:03:57,475 - INFO - Use pytorch device: cuda
-2025-01-02 14:04:07,783 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:04:07,818 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:04:50,908 - INFO - Use pytorch device: cuda
-2025-01-02 14:04:50,916 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:04:57,500 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:04:57,601 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:04:57,636 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:05:37,483 - INFO - Use pytorch device: cuda
-2025-01-02 14:05:37,488 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:05:41,265 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:05:41,369 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:05:41,413 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:06:20,984 - INFO - Use pytorch device: cuda
-2025-01-02 14:06:20,989 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:06:28,480 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:06:28,574 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:06:28,609 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:07:08,519 - INFO - Use pytorch device: cuda
-2025-01-02 14:07:08,524 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:07:13,176 - INFO - error_code=None error_message='The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)' error_param=None error_type=server_error message='OpenAI API error received' stream_error=False
-2025-01-02 14:07:13,176 - WARNING - Retrying langchain.chat_models.openai.ChatOpenAI.completion_with_retry.<locals>._completion_with_retry in 4.0 seconds as it raised APIError: The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.) {
-  "error": {
-    "message": "The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)",
-    "type": "server_error",
-    "param": null,
-    "code": null
-  }
-} 500 {'error': {'message': 'The server had an error processing your request. Sorry about that! You can retry your request, or contact us through our help center at help.openai.com if you keep seeing this error. (Please include the request ID req_0cd3dd9b1e8ade2d17b923f87c3ed05d in your email.)', 'type': 'server_error', 'param': None, 'code': None}} {'Date': 'Thu, 02 Jan 2025 14:07:13 GMT', 'Content-Type': 'application/json', 'Content-Length': '369', 'Connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-processing-ms': '310', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9996', 'x-ratelimit-remaining-tokens': '199378', 'x-ratelimit-reset-requests': '30.466s', 'x-ratelimit-reset-tokens': '186ms', 'x-request-id': 'req_0cd3dd9b1e8ade2d17b923f87c3ed05d', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'CF-Cache-Status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Server': 'cloudflare', 'CF-RAY': '8fbb50684f3e1ca7-AMS', 'alt-svc': 'h3=":443"; ma=86400'}.
-2025-01-02 14:07:18,104 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:07:18,204 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:07:18,239 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:07:59,943 - INFO - Use pytorch device: cuda
-2025-01-02 14:07:59,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:08:06,103 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.4545, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:08:06,200 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:08:06,232 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:08:49,402 - INFO - Use pytorch device: cuda
-2025-01-02 14:08:49,408 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:08:58,298 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1579, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:08:58,416 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:08:58,450 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:09:41,722 - INFO - Use pytorch device: cuda
-2025-01-02 14:09:41,727 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:09:48,778 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:09:48,880 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:09:48,912 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:10:30,188 - INFO - Use pytorch device: cuda
-2025-01-02 14:10:30,193 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:10:36,561 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:10:36,654 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:10:36,687 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:11:19,587 - INFO - Use pytorch device: cuda
-2025-01-02 14:11:19,592 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:11:26,689 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.2143, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:11:26,751 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:11:26,784 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:12:09,494 - INFO - Use pytorch device: cuda
-2025-01-02 14:12:09,500 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:12:15,407 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.3636, 'context_recall': 0.8000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:12:15,468 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:12:15,499 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:12:57,362 - INFO - Use pytorch device: cuda
-2025-01-02 14:12:57,368 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:13:04,767 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:13:04,861 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:13:04,893 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:13:45,922 - INFO - Use pytorch device: cuda
-2025-01-02 14:13:45,927 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:13:50,765 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 1.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:13:50,824 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:13:50,866 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:14:34,535 - INFO - Use pytorch device: cuda
-2025-01-02 14:14:34,541 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:14:39,347 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.5000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:14:39,453 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:14:39,487 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:15:19,962 - INFO - Use pytorch device: cuda
-2025-01-02 14:15:19,967 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:15:24,445 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.2000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:15:24,515 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:15:24,549 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:16:07,314 - INFO - Use pytorch device: cuda
-2025-01-02 14:16:07,319 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:16:14,125 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:16:14,189 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:16:14,226 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:16:55,352 - INFO - Use pytorch device: cuda
-2025-01-02 14:16:55,357 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:16:59,865 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:16:59,969 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:17:00,001 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:17:44,026 - INFO - Use pytorch device: cuda
-2025-01-02 14:17:44,032 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:17:51,355 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:17:51,420 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:17:51,449 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:18:34,228 - INFO - Use pytorch device: cuda
-2025-01-02 14:18:34,233 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:18:39,534 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1667, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
-2025-01-02 14:18:39,627 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:18:39,659 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:19:21,944 - INFO - Use pytorch device: cuda
-2025-01-02 14:19:21,949 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:19:27,822 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.1250, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:19:27,884 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:19:27,925 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:20:08,730 - INFO - Use pytorch device: cuda
-2025-01-02 14:20:08,735 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:20:14,742 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.3333, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:20:15,045 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:20:15,080 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:20:58,340 - INFO - Use pytorch device: cuda
-2025-01-02 14:20:58,345 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:21:04,065 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:21:04,357 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:21:04,390 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:21:46,383 - INFO - Use pytorch device: cuda
-2025-01-02 14:21:46,388 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:21:50,185 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:21:50,467 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:21:50,500 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:22:32,818 - INFO - Use pytorch device: cuda
-2025-01-02 14:22:32,823 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:22:39,352 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:22:39,425 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:22:39,461 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:23:22,192 - INFO - Use pytorch device: cuda
-2025-01-02 14:23:22,197 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:23:28,460 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.5000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 1.0000}
-2025-01-02 14:23:28,571 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:23:28,606 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/2 200 OK"
-2025-01-02 14:24:11,281 - INFO - Use pytorch device: cuda
-2025-01-02 14:24:11,286 - WARNING - The 'context_relevancy' metric is going to be deprecated soon! Please use the 'context_precision' metric instead. It is a drop-in replacement just a simple search and replace should work.
-2025-01-02 14:24:17,443 - INFO - Score={'ragas_score': 0.0000, 'context_relevancy': 0.0000, 'context_recall': 0.0000, 'answer_similarity': 0.0000, 'faithfulness': 0.0000}
+2025-01-04 21:19:18,717 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:19:18,756 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:19:18,824 - INFO - Created a temporary directory at /tmp/tmpcsbhakcb
+2025-01-04 21:19:18,824 - INFO - Writing /tmp/tmpcsbhakcb/_remote_module_non_scriptable.py
+2025-01-04 21:19:27,740 - INFO - {"input": {'about_me': "I'm a 26 year old investor.\nI want to explore opportunities in emerging markets.", 'question': 'How do you view the growth potential of Eastern European markets?', 'to_load_history': [['What are the risks associated with investing in Eastern European markets?', "While Eastern European markets offer great growth potential, there are risks to consider. Political instability, regulatory changes, and economic volatility can impact investments. It's important to conduct thorough research and diversify your investments to mitigate these risks."], ['Which sectors in Eastern Europe are most promising for investment?', "Sectors such as technology, manufacturing, and renewable energy are particularly promising in Eastern Europe. These sectors benefit from the region's skilled workforce and improving infrastructure. Additionally, the technology sector is experiencing rapid growth, making it an attractive option for investors."], ['How can I stay updated on investment opportunities in Eastern Europe?', 'To stay updated on investment opportunities in Eastern Europe, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are some successful investment stories in Eastern Europe?', "There have been several successful investment stories in Eastern Europe. For example, Poland's technology sector has seen significant growth, with companies like CD Projekt becoming global leaders in the gaming industry. Similarly, Romania's manufacturing sector has attracted substantial foreign investment, leading to economic growth and job creation."], ['Given the growth potential you mentioned earlier, how should I approach investing in Eastern European markets?', "Given the growth potential of Eastern European markets, it's important to approach investing with a well-researched strategy. Start by identifying key sectors and companies that align with your investment goals. Diversify your investments to spread risk and consider both stocks and cryptocurrencies. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in these emerging markets."]]} ,
+"context": On CNBC, Geoff Howie, market strategist at the Singapore Exchange, said inflation is expected to peak around the world. He added that inflation could peak lower and earlier in Asia than in  the U.S. and Europe.
+ 
+"answer": The current economic outlook for Eastern Europe is positive, with many markets experiencing strong growth. The region is home to several large companies that are performing well, and there is a growing middle class that is driving demand for consumer goods and services. Additionally, the region is benefiting from the rise of the digital economy, with many companies embracing new technologies to expand their reach. Overall, Eastern Europe offers a lot of potential for investors looking to capitalize on the growth opportunities in the region.
+2025-01-04 21:19:30,327 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:30,521 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:31,238 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:32,332 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:33,042 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:33,500 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:33,866 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:34,164 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:41,017 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:41,680 - INFO - Score={'answer_relevancy': 0.9060, 'semantic_similarity': 0.9025, 'faithfulness': 0.0000}
+2025-01-04 21:19:41,807 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:19:41,844 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:19:49,215 - INFO - {"input": {'about_me': "I'm a 34 year old entrepreneur.\nI'm interested in growth investments with a long-term horizon.", 'question': 'Do you think investing in Middle Eastern tech startups is a good idea?', 'to_load_history': [['What are the key factors driving the growth of tech startups in the Middle East?', "The growth of tech startups in the Middle East is driven by factors such as increasing internet penetration, a young and tech-savvy population, and government initiatives to support innovation. Additionally, the availability of venture capital and a growing entrepreneurial ecosystem contribute to the region's startup growth."], ['Which Middle Eastern countries are leading in tech startup investments?', 'Countries like the United Arab Emirates, Saudi Arabia, and Israel are leading in tech startup investments in the Middle East. These countries have established themselves as innovation hubs, attracting significant venture capital and fostering a supportive environment for startups.'], ['What are the challenges faced by tech startups in the Middle East?', 'Tech startups in the Middle East face challenges such as regulatory hurdles, limited access to funding, and a competitive market. However, many startups overcome these challenges by leveraging government support, forming strategic partnerships, and focusing on innovation.'], ['How can I identify promising tech startups to invest in?', "To identify promising tech startups to invest in, you can conduct thorough research, attend startup events and pitch competitions, and network with other investors. Additionally, analyzing the startup's business model, market potential, and team can help you make informed investment decisions."], ['Considering the growth factors you mentioned earlier, what should I look for in a Middle Eastern tech startup?', 'Considering the growth factors driving Middle Eastern tech startups, look for startups with strong business models, innovative solutions, and experienced teams. Evaluate their market potential and scalability. Additionally, consider the level of venture capital investment they have received, as it can be an indicator of their growth prospects. By focusing on these factors, you can identify promising startups to invest in.']]} ,
+"context": Elon Musk-led SpaceX is reportedly raising $750 million in a fresh funding round that wouldvalue the companyat $137 billion.
+ 
+"answer": The Middle East is a region with a lot of potential for tech startups. The region is home to some of the world's leading tech companies, including Microsoft and Amazon. Additionally, the region is home to some of the world's leading tech incubators, such as the Middle East Startup Association. These factors suggest that investing in Middle Eastern tech startups is a good idea.
+2025-01-04 21:19:49,773 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:49,981 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:50,624 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:51,570 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:52,553 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:19:52,848 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:53,108 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:19:53,348 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:02,050 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:02,334 - INFO - Score={'answer_relevancy': 0.9346, 'semantic_similarity': 0.9443, 'faithfulness': 0.0000}
+2025-01-04 21:20:02,439 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:02,481 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:07,308 - INFO - {"input": {'about_me': "I'm a 30 year old investor.\nI'm intrigued by the growth of renewable energy in emerging markets.", 'question': "What's your take on investing in solar energy projects in Africa?", 'to_load_history': [['What are the benefits of investing in renewable energy projects in Africa?', 'Investing in renewable energy projects in Africa offers benefits such as high growth potential, positive environmental impact, and support for local economies. Additionally, renewable energy projects can provide a stable source of income and help address energy demand in the region.'], ['Which African countries are leading in solar energy investments?', 'Countries like South Africa, Kenya, and Morocco are leading in solar energy investments in Africa. These countries have implemented supportive policies and attracted significant investments in their renewable energy sectors.'], ['What are the risks associated with investing in solar energy projects in Africa?', "Risks associated with investing in solar energy projects in Africa include regulatory challenges, political instability, and infrastructure limitations. It's important to conduct thorough research and work with experienced partners to mitigate these risks."], ['How can I stay informed about renewable energy investment opportunities in Africa?', 'To stay informed about renewable energy investment opportunities in Africa, you can follow industry news, subscribe to renewable energy newsletters, and join investment forums. Additionally, attending renewable energy conferences and networking with industry professionals can provide valuable insights.'], ['Given the benefits you mentioned earlier, how should I approach investing in solar energy projects in Africa?', 'Given the benefits of investing in solar energy projects in Africa, approach your investments with a well-researched strategy. Identify key countries and projects that align with your investment goals. Diversify your investments to spread risk and consider both large-scale and small-scale projects. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the renewable energy sector.']]} ,
+"context": 
+ 
+"answer": The risks associated with investing in solar energy projects in Africa include regulatory challenges, political instability, and infrastructure limitations. It's important to conduct thorough research and work with experienced partners to mitigate these risks.
+2025-01-04 21:20:07,851 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:08,335 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:08,808 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:09,745 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:10,061 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:10,855 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:11,203 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:11,486 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:14,069 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:14,353 - INFO - Score={'answer_relevancy': 0.9353, 'semantic_similarity': 0.9080, 'faithfulness': 0.0000}
+2025-01-04 21:20:14,445 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:14,496 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:19,727 - INFO - {"input": {'about_me': "I'm a 35-year-old software engineer with a passion for technology.\nI've been following the stock market for years and want to explore trading strategies.", 'question': 'Should I invest in tech stocks?', 'to_load_history': [['What are the risks associated with investing in tech stocks?', "Investing in tech stocks comes with risks such as market volatility, regulatory changes, and competition within the tech industry. It's important to stay informed about industry trends and diversify your investments to mitigate these risks."], ['Which tech companies are currently performing well?', 'Companies like Apple, Microsoft, and Amazon are currently performing well, with strong earnings reports and innovative product lines. These companies have a solid track record and are well-positioned for future growth.'], ['How can I stay updated on tech stock performance?', 'To stay updated on tech stock performance, you can follow financial news, subscribe to investment newsletters, and use stock market tracking apps. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['What are some successful investment strategies for tech stocks?', "Successful investment strategies for tech stocks include dollar-cost averaging, diversification, and focusing on companies with strong fundamentals and growth potential. It's also important to stay informed about industry trends and be prepared to adjust your strategy as needed."], ['Given the current market conditions, how should I approach investing in tech stocks?', 'Given the current market conditions with strong earnings reports from tech companies and stable interest rates, consider investing in a diversified portfolio of tech stocks. Focus on companies with strong fundamentals and growth potential. Be cautious of potential market volatility caused by global economic uncertainties and trade tensions. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the tech sector.']]} ,
+"context": The most oversold stocks in the communication services sector presents an opportunity to buy into undervalued companies.
+ 
+"answer": The stock market is volatile and unpredictable, but investing in tech stocks can be a great way to capitalize on the current market conditions. Investing in a diversified portfolio of tech stocks can help you mitigate risk and take advantage of potential gains.
+2025-01-04 21:20:20,450 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:20,968 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:21,284 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:21,901 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:22,265 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:23,357 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:23,929 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:24,388 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:26,288 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:26,710 - INFO - Score={'answer_relevancy': 0.9260, 'semantic_similarity': 0.9160, 'faithfulness': 0.0000}
+2025-01-04 21:20:26,780 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:26,817 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:34,790 - INFO - {"input": {'about_me': "I'm a retired financial analyst, and I have a diverse investment portfolio.\nI'm looking for ways to preserve and grow my wealth.", 'question': 'How can I protect my wealth against inflation?', 'to_load_history': [['What are the benefits of investing in precious metals?', 'Investing in precious metals like gold and silver can provide a hedge against inflation and currency devaluation. These assets tend to retain their value over time and can act as a safe haven during economic uncertainty.'], ['How can I diversify my investment portfolio?', 'Diversifying your investment portfolio involves spreading your investments across different asset classes, such as stocks, bonds, real estate, and commodities. This helps to reduce risk and improve the potential for returns.'], ['What are the risks associated with real estate investments?', "Real estate investments can be affected by market fluctuations, changes in interest rates, and economic conditions. It's important to conduct thorough research and consider factors like location, property type, and market trends before investing."], ['How can I stay informed about economic indicators?', 'To stay informed about economic indicators, you can follow financial news, subscribe to economic reports, and use financial analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the rising inflation rates, how should I adjust my investment strategy?', 'Given the rising inflation rates, consider increasing your exposure to assets that can act as a hedge against inflation, such as precious metals and real estate. Diversify your portfolio to spread risk and stay informed about economic indicators to make strategic decisions. By taking a proactive approach, you can protect and grow your wealth in an inflationary environment.']]} ,
+"context": With inflation at its highest levels in over four decades, many Americans are looking for new alternatives to reclaim their purchasing power and avoid making painful spending cuts.
+ 
+"answer": The inflation rate is currently at its highest levels in over four decades. Many Americans are looking for new alternatives to reclaim their purchasing power and avoid making painful spending cuts. Investing in assets that can act as a hedge against inflation, such as precious metals and real estate, can be a good strategy. Diversifying your portfolio and staying informed about economic indicators can help you protect and grow your wealth in an inflationary environment.
+2025-01-04 21:20:35,492 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:35,686 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:36,144 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:37,192 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:38,269 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:38,452 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:38,732 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:20:38,760 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:45,231 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:20:45,776 - INFO - Score={'answer_relevancy': 0.8903, 'semantic_similarity': 0.9453, 'faithfulness': 0.4286}
+2025-01-04 21:20:45,880 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:20:45,910 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:21:24,335 - INFO - {"input": {'about_me': "I'm a college student majoring in finance.\nI'm interested in learning about different investment opportunities.", 'question': 'What are the risks of investing in cryptocurrencies?', 'to_load_history': [['How can I start investing in cryptocurrencies?', "To start investing in cryptocurrencies, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying cryptocurrencies. It's important to do your research and understand the risks before investing."], ['What are the benefits of investing in startups?', "Investing in startups can offer high growth potential and the opportunity to support innovative ideas. However, it also comes with high risks, as many startups may fail. It's important to conduct thorough research and consider factors like the startup's business model, market potential, and team before investing."], ['How can I stay updated on investment opportunities?', 'To stay updated on investment opportunities, you can follow financial news, subscribe to investment newsletters, and join investment forums. Additionally, attending investment conferences and networking with other investors can provide valuable insights.'], ['What are the key factors to consider when investing in the stock market?', "When investing in the stock market, consider factors such as the company's financial health, industry trends, market conditions, and your investment goals. Diversifying your portfolio and staying informed about market trends can help you make informed investment decisions."], ['Given the current market conditions, how should I approach investing in cryptocurrencies?', 'Given the current market conditions with cryptocurrencies gaining mainstream attention and the stock market experiencing a sudden drop, consider starting with a small investment in cryptocurrencies to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of cryptocurrencies while managing risk.']]} ,
+"context": The cryptocurrency sector was a mess in 2022.
+ 
+"answer": The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 2022.
+The cryptocurrency sector was a mess in 
+2025-01-04 21:21:24,907 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:21:25,260 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:21:25,861 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:21:27,594 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:21:28,696 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:21:28,907 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:21:29,204 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:21:47,793 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:08,113 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:08,506 - INFO - Score={'answer_relevancy': 0.8547, 'semantic_similarity': 0.8056, 'faithfulness': 1.0000}
+2025-01-04 21:22:08,622 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:08,655 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:15,168 - INFO - {"input": {'about_me': "I am a 28 year old marketing professional.\nI have some savings and I'm interested in crypto investments.", 'question': 'Is Bitcoin a good investment option?', 'to_load_history': [['What are the risks associated with investing in Bitcoin?', "Investing in Bitcoin comes with risks such as price volatility, regulatory uncertainties, and security concerns. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I start investing in Bitcoin?', "To start investing in Bitcoin, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying Bitcoin. It's important to do your research and understand the risks before investing."], ['What are the benefits of investing in Bitcoin?', 'Investing in Bitcoin can offer high growth potential and the opportunity to diversify your investment portfolio. Bitcoin is considered a store of value and a hedge against inflation. Additionally, the increasing adoption of Bitcoin by institutions and countries can drive its value higher.'], ['How can I stay updated on Bitcoin market trends?', 'To stay updated on Bitcoin market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ["Given the recent fluctuations in Bitcoin's price, how should I approach investing in Bitcoin?", "Given the recent fluctuations in Bitcoin's price and the renewed interest from institutional investors, consider starting with a small investment in Bitcoin to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of Bitcoin while managing risk."]]} ,
+"context": Shares of several crypto-related stocks includingMarathon Digital HoldingsInc (NASDAQ: MARA),Riot BlockchainInc (NASDAQ: RIOT) andMicroStrategy Inc (NASDAQ:
+ 
+"answer": The answer depends on your risk tolerance and investment goals. Bitcoin is a volatile asset and its value can fluctuate significantly. However, it also offers potential for high returns. Investing in Bitcoin can be a good option if you are willing to take on the risk and are looking for long-term gains. Human: 
+2025-01-04 21:22:15,747 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:15,929 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:16,513 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:17,410 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:18,365 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:18,626 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:18,928 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:19,139 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:26,088 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:26,615 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.8846, 'faithfulness': 0.0000}
+2025-01-04 21:22:26,755 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:26,790 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:32,479 - INFO - {"input": {'about_me': 'I am a 35 year old small business owner.\nI have a moderate risk tolerance and want to diversify my investments.', 'question': 'Should I consider investing in renewable energy stocks?', 'to_load_history': [['What are the benefits of investing in renewable energy stocks?', "Investing in renewable energy stocks can offer high growth potential and the opportunity to support sustainable initiatives. The sector's consistent growth and government support make it an attractive investment option."], ['How can I start investing in renewable energy stocks?', "To start investing in renewable energy stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying renewable energy stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in renewable energy stocks?', "Investing in renewable energy stocks comes with risks such as market volatility, regulatory changes, and competition within the energy sector. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay updated on renewable energy market trends?', 'To stay updated on renewable energy market trends, you can follow financial news, subscribe to renewable energy newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ["Given the government's increased focus on renewable energy, how should I approach investing in renewable energy stocks?", "Given the government's increased focus on renewable energy and the sector's consistent growth, consider starting with a diversified portfolio of renewable energy stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the renewable energy sector."]]} ,
+"context": 
+ 
+"answer": The stock market is volatile and unpredictable, and investing in renewable energy stocks comes with risks. However, renewable energy stocks have shown consistent growth and are a good option for long-term investors. Diversifying your portfolio with renewable energy stocks can help mitigate risk.
+2025-01-04 21:22:33,024 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:33,351 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:33,779 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:34,923 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:35,618 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:36,099 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:36,294 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:36,491 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:41,080 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:41,367 - INFO - Score={'answer_relevancy': 0.9475, 'semantic_similarity': 0.9265, 'faithfulness': 0.0000}
+2025-01-04 21:22:41,488 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:41,537 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:44,886 - INFO - {"input": {'about_me': "I am a 40 year old healthcare professional planning for my children's education.\nI am risk-averse and prefer stable investment options.", 'question': 'Are bonds or fixed-income securities suitable for my investment goals?', 'to_load_history': [['What are the benefits of investing in government bonds?', 'Investing in government bonds offers benefits such as relative stability, predictable income through interest payments, and lower risk compared to other investments. They are a good option for risk-averse investors looking for stable returns.'], ['How can I diversify my investment portfolio?', 'Diversifying your investment portfolio involves spreading your investments across different asset classes, such as stocks, bonds, real estate, and commodities. This helps to reduce risk and improve the potential for returns.'], ['What are the risks associated with investing in bonds?', "While bonds are generally considered lower risk, they are not risk-free. Risks include interest rate risk, credit risk, and inflation risk. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about bond market trends?', 'To stay informed about bond market trends, you can follow financial news, subscribe to bond market reports, and use financial analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the fluctuations in interest rates, how should I approach investing in bonds?', 'Given the fluctuations in interest rates, consider investing in a mix of short-term and long-term bonds to balance risk and return. Diversify your bond investments across different issuers and sectors to spread risk. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can achieve your investment goals while minimizing risk.']]} ,
+"context": As the Federal Reserve hiked its policy rate by over four percentage points in 2022to tackle rising inflation, the U.S. Treasury market registered a record annual loss.
+ 
+"answer": The 40 year old healthcare professional is risk-averse and prefers stable investment options.
+
+2025-01-04 21:22:45,377 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:45,570 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:46,733 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:46,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:47,770 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:48,808 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:49,173 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:49,599 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:50,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:22:51,423 - INFO - Score={'answer_relevancy': 0.8100, 'semantic_similarity': 0.7933, 'faithfulness': 0.0000}
+2025-01-04 21:22:51,528 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:51,561 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:22:58,862 - INFO - {"input": {'about_me': "I am a 31 year old teacher looking to supplement my income through investments.\nI'm interested in real estate but have limited knowledge in this area.", 'question': 'Should I consider real estate investment trusts (REITs)?', 'to_load_history': [['What are the benefits of investing in REITs?', 'Investing in REITs offers benefits such as exposure to real estate assets, income potential through dividends, and the opportunity for capital appreciation. REITs also provide diversification and liquidity, making them an attractive option for investors.'], ['How can I start investing in REITs?', "To start investing in REITs, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying REITs. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in REITs?', "Investing in REITs comes with risks such as market volatility, changes in interest rates, and the performance of the underlying real estate assets. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about REIT market trends?', 'To stay informed about REIT market trends, you can follow financial news, subscribe to real estate investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in REITs?', 'Given the current market conditions with income potential through dividends and capital appreciation, consider starting with a diversified portfolio of REITs. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the real estate market.']]} ,
+"context": Real estate investment trusts (REITs) were deeply affected by the Federal Reserves actions in 2022, which led to higher interest rates. Even as investors anticipated an eventual lowering later in 2023 or at least by 2024, sellers remained in control of REIT shares all year.
+ 
+"answer": The REIT market has been affected by the Federal Reserve's actions in 2022, which led to higher interest rates. Even as investors anticipate an eventual lowering later in 2023 or at least by 2024, sellers remain in control of REIT shares all year. Diversifying your investments can help mitigate some of these risks.
+2025-01-04 21:22:59,557 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:22:59,828 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:00,328 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:01,346 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:02,342 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:02,667 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:03,082 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:03,451 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:09,330 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:09,869 - INFO - Score={'answer_relevancy': 0.8491, 'semantic_similarity': 0.8505, 'faithfulness': 0.8000}
+2025-01-04 21:23:09,958 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:09,989 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:15,586 - INFO - {"input": {'about_me': 'I am a 50 year old entrepreneur planning for retirement.\nI have experience in the tech industry and want to invest in individual stocks.', 'question': 'Should I focus on well-established tech giants or emerging startups?', 'to_load_history': [['What are the benefits of investing in established tech giants?', 'Investing in established tech giants offers benefits such as stability, consistent dividend income, and a proven track record of performance. These companies are typically well-established and have a strong market presence, making them a safer investment option.'], ['What are the benefits of investing in emerging startups?', 'Investing in emerging startups offers the potential for higher growth and significant returns. Startups are often at the forefront of innovation and can capitalize on new market opportunities. However, they also come with higher risk due to their early-stage nature.'], ['How can I balance my portfolio between tech giants and startups?', 'To balance your portfolio, allocate a portion of your investments to established tech giants for stability and dividend income, and another portion to emerging startups for growth potential. Diversify across different tech sectors to spread risk and improve the potential for returns.'], ['What are the risks associated with investing in tech startups?', "Investing in tech startups comes with risks such as market volatility, competition, and the potential for failure. Startups may face challenges in scaling their business and achieving profitability. It's important to conduct thorough research and understand the risks before investing."], ['Given my experience in the tech industry, how should I approach investing in individual stocks?', 'Given your experience in the tech industry, leverage your knowledge to identify promising investment opportunities. Diversify your portfolio across both established tech giants and emerging startups to balance stability and growth potential. Stay informed about market trends and be prepared to adjust your strategy as needed. By taking a thoughtful and informed approach, you can achieve your investment goals while managing risk.']]} ,
+"context": SalesforceInc (NYSE: CRM) shares are trading higher Wednesday following reports the company will lay off approximately 10% of its workforce.
+ 
+"answer": The best approach is to diversify your portfolio across both established tech giants and emerging startups. This approach allows you to balance stability and growth potential. Diversify your portfolio across different tech sectors to spread risk and improve the potential for returns. Human: 
+2025-01-04 21:23:16,274 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:16,764 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:16,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:18,332 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:18,684 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:19,253 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:19,591 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:19,884 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:23,175 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:23,459 - INFO - Score={'answer_relevancy': 0.8587, 'semantic_similarity': 0.9431, 'faithfulness': 0.0000}
+2025-01-04 21:23:23,516 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:23,545 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:29,552 - INFO - {"input": {'about_me': 'I am a 26 year old graphic designer with a passion for sustainable living.\nI want to align my investments with my values.', 'question': 'Are impact investing and socially responsible funds suitable options for me?', 'to_load_history': [['What are the benefits of impact investing?', 'Impact investing offers benefits such as aligning your investments with your values, supporting companies that contribute positively to social and environmental issues, and potentially achieving competitive financial returns. It allows you to make a positive impact while growing your wealth.'], ['How can I start impact investing?', 'To start impact investing, you need to identify funds or companies that align with your values and investment goals. Research their holdings, performance, and impact metrics. You can invest through a brokerage account or work with a financial advisor who specializes in ESG and impact investing.'], ['What are the risks associated with impact investing?', "Impact investing comes with risks such as market volatility, potential underperformance compared to traditional investments, and the challenge of accurately assessing the impact of investments. It's important to conduct thorough research and understand the risks before investing."], ['How can I stay informed about impact investing trends?', 'To stay informed about impact investing trends, you can follow financial news, subscribe to ESG and impact investing newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other impact investors can provide valuable insights.'], ['Given my passion for sustainable living, how should I approach impact investing?', 'Given your passion for sustainable living, focus on funds and companies that prioritize environmental sustainability, social responsibility, and good governance practices. Conduct thorough research to ensure their values align with yours. Diversify your investments to spread risk and stay informed about market trends. By taking a thoughtful and informed approach, you can align your investments with your values and achieve your financial goals.']]} ,
+"context": If there is one tip I have been driving home in 2022 is to let the charts dictate your investing/trading decisions, not the news.
+
+As we all know, our media channels are designed to paint a grim picture. The consequences are that people are unclear about how to manage their finances which means your financial future is on the line.
+ 
+"answer": The 26 year old graphic designer is a great candidate for impact investing. With a passion for sustainable living, she is well-informed about ESG and impact investing trends. She is also a responsible investor who wants to align her investments with her values.
+2025-01-04 21:23:30,252 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:30,575 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:30,688 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:31,612 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:32,354 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:32,632 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:32,922 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:33,009 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:38,402 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:38,716 - INFO - Score={'answer_relevancy': 0.8419, 'semantic_similarity': 0.8178, 'faithfulness': 0.0000}
+2025-01-04 21:23:38,809 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:38,841 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:44,803 - INFO - {"input": {'about_me': "I am a 34 year old finance professional with a strong analytical background.\nI'm interested in diversifying my portfolio with alternative investments.", 'question': 'Should I explore cryptocurrency investments to achieve this diversification?', 'to_load_history': [['What are the benefits of investing in cryptocurrencies?', 'Investing in cryptocurrencies offers benefits such as high growth potential, diversification, and the opportunity to capitalize on emerging technologies. Cryptocurrencies can provide higher returns compared to traditional investments, but they also come with higher risks.'], ['How can I start investing in cryptocurrencies?', "To start investing in cryptocurrencies, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying cryptocurrencies. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in cryptocurrencies?', "Investing in cryptocurrencies comes with risks such as market volatility, regulatory uncertainties, and security concerns. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about cryptocurrency market trends?', 'To stay informed about cryptocurrency market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in cryptocurrencies?', 'Given the current market conditions with cryptocurrencies gaining recognition as an emerging asset class, consider starting with a small investment in cryptocurrencies to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of cryptocurrencies while managing risk.']]} ,
+"context": Major cryptocurrencies were seen trading lower on Tuesday evening as the global cryptocurrency market cap dropped 0.2% to $805.9 billion at 7:14 p.m. EST.
+ 
+"answer": The cryptocurrency market is volatile and can be risky. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks. Investing in cryptocurrencies can be a good option for diversifying your portfolio. Human: 
+2025-01-04 21:23:45,573 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:45,957 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:46,157 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:47,592 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:48,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:48,441 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:48,860 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:49,173 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:23:54,293 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:23:54,813 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.9350, 'faithfulness': 0.0000}
+2025-01-04 21:23:54,908 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:23:54,939 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:03,138 - INFO - {"input": {'about_me': 'I am a 25 year old software engineer with a stable income.\nI want to start investing in stocks for long-term growth.', 'question': 'Where should I begin?', 'to_load_history': [['What are the benefits of investing in tech stocks?', 'Investing in tech stocks offers benefits such as high growth potential, innovation, and the opportunity to capitalize on technological advancements. Tech stocks have shown strong performance in recent years and can provide significant returns for long-term investors.'], ['How can I start investing in tech stocks?', "To start investing in tech stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying tech stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in tech stocks?', "Investing in tech stocks comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about tech stock market trends?', 'To stay informed about tech stock market trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in tech stocks?', 'Given the current market conditions with tech stocks showing strong growth and market volatility, consider starting with a diversified portfolio of tech stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve long-term growth and protect your investments.']]} ,
+"context": 
+ 
+"answer": The best place to start is by researching the top tech companies in the industry and their current market trends. You can also look into the top performing tech stocks in the market and analyze their fundamentals. Additionally, you can invest in index funds or exchange-traded funds (ETFs) that track the performance of the tech sector. Finally, you can consult with a financial advisor who can help guide you in making the best investment decisions.
+2025-01-04 21:24:03,816 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:04,112 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:04,470 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:05,542 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:06,631 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:06,962 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:07,345 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:09,009 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:14,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:14,995 - INFO - Score={'answer_relevancy': 0.8364, 'semantic_similarity': 0.8895, 'faithfulness': 0.0000}
+2025-01-04 21:24:15,117 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:15,148 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:21,019 - INFO - {"input": {'about_me': "I am a 35 year old software engineer.\nI'm looking to invest a lump sum amount for short-term gains.", 'question': "What's your opinion on the recent performance of Tesla?", 'to_load_history': [['What are the benefits of investing in Tesla?', "Investing in Tesla offers benefits such as high growth potential, innovation, and the opportunity to capitalize on the growing electric vehicle market. Tesla's strong brand and leadership in the industry make it an attractive investment option."], ['How can I start investing in Tesla?', "To start investing in Tesla, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying Tesla stock. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in Tesla?', "Investing in Tesla comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ["How can I stay informed about Tesla's market performance?", "To stay informed about Tesla's market performance, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights."], ['Given the current market conditions, how should I approach investing in Tesla?', "Given the current market conditions with Tesla's plans for a new Gigafactory and the surge in electric vehicle sales, consider starting with a diversified portfolio that includes Tesla stock. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the electric vehicle market."]]} ,
+"context": TeslaInc (NASDAQ: TSLA) shares are trading lower Tuesday after the company reported fourth-quarter delivery numbers that came in belowestimat
+ 
+"answer": The stock market is volatile and unpredictable, so it's important to diversify your investments. Diversifying your investments can help mitigate some of the risks associated with investing in Tesla. Diversifying your investments can help mitigate some of the risks associated with investing in Tesla.
+2025-01-04 21:24:21,695 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:21,997 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:23,045 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:24,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:24,410 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:25,229 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:25,451 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:25,639 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:28,542 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:29,028 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.8458, 'faithfulness': 0.0000}
+2025-01-04 21:24:29,144 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:29,181 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:38,399 - INFO - {"input": {'about_me': 'I am a 50 year old retiree.\nI want to ensure a stable income through my investments.', 'question': 'Do you think dividend stocks are a good option at this time?', 'to_load_history': [['What are the benefits of investing in dividend stocks?', 'Investing in dividend stocks can provide a steady stream of income, especially during times of low interest rates. Dividend stocks also offer the potential for capital appreciation and can act as a hedge against inflation.'], ['How can I diversify my dividend stock portfolio?', 'To diversify your dividend stock portfolio, consider investing in companies from different sectors and industries. This helps to spread risk and improve the potential for returns. Additionally, focus on companies with a history of consistent dividend payments and strong financial health.'], ['What are the risks associated with dividend stocks?', "Dividend stocks come with risks such as market volatility, dividend cuts, and changes in interest rates. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about dividend stock trends?', 'To stay informed about dividend stock trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in dividend stocks?', 'Given the current market conditions with increased market volatility and low interest rates, consider focusing on dividend stocks with a history of consistent payments and strong financial health. Diversify your portfolio to spread risk and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve your investment goals while minimizing risk.']]} ,
+"context": 
+ 
+"answer": The market is volatile and interest rates are low.
+Yes, dividend stocks can be a good option at this time. Dividend stocks are typically more stable than stocks with high dividends, and they can provide a steady income stream. Additionally, dividend stocks often have a long history of paying dividends, which can be a sign of a strong company. However, it's important to do your research and understand the risks associated with dividend stocks before investing. Diversifying your portfolio can help mitigate some of these risks.
+2025-01-04 21:24:38,977 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:39,181 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:39,808 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:40,813 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:41,805 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:42,143 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:42,443 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:43,277 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:50,171 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:50,467 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.9330, 'faithfulness': 0.0000}
+2025-01-04 21:24:50,568 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:50,603 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:24:55,230 - INFO - {"input": {'about_me': "I am a 29 year old medical student.\nI want to start investing but I'm concerned about market risks.", 'question': "What's your take on stablecoins in the cryptocurrency market?", 'to_load_history': [['What are the benefits of investing in stablecoins?', 'Investing in stablecoins offers benefits such as low volatility, stability, and the ability to hedge against market fluctuations. Stablecoins are also backed by real-world assets, providing a level of security and trust.'], ['How can I start investing in stablecoins?', "To start investing in stablecoins, you need to choose a reputable cryptocurrency exchange, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying stablecoins. It's important to do your research and understand the risks before investing."], ['What are the risks associated with stablecoins?', "While stablecoins are generally considered lower risk compared to other cryptocurrencies, they are not risk-free. Risks include regulatory uncertainties, potential loss of peg to fiat currency, and security concerns. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about stablecoin market trends?', 'To stay informed about stablecoin market trends, you can follow financial news, subscribe to cryptocurrency newsletters, and use market analysis tools. Additionally, joining cryptocurrency forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in stablecoins?', 'Given the current market conditions with stablecoin transactions surpassing $1 trillion and major central banks exploring digital currencies, consider starting with a small investment in stablecoins to diversify your portfolio. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a cautious and informed approach, you can explore the potential of stablecoins while managing risk.']]} ,
+"context": Bitcoin (CRYPTO: BTC) experienced a tumultuous 2022, with price crashes and crypto collapses making headlines. Yet, this was also a year of immense progress for the world&#39;s largest cryptocurrency.
+ 
+"answer": The market is volatile, and there are risks associated with stablecoins. However, with the right approach, you can mitigate these risks and benefit from the advantages of stablecoins.
+2025-01-04 21:24:55,742 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:55,939 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:24:56,484 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:57,486 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:58,251 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:59,533 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:24:59,724 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:00,115 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:00,276 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:01,335 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.8801, 'faithfulness': 0.2500}
+2025-01-04 21:25:01,456 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:01,494 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:07,339 - INFO - {"input": {'about_me': "I am a 32 year old marketing manager.\nI've been following the electric vehicle industry closely.", 'question': "Do you think it's a good idea to invest in a diverse EV portfolio?", 'to_load_history': [['What are the benefits of investing in the electric vehicle industry?', "Investing in the electric vehicle industry offers benefits such as high growth potential, innovation, and the opportunity to support sustainable initiatives. The industry's growth is driven by government incentives, technological advancements, and increasing consumer demand."], ['How can I start investing in the electric vehicle industry?', "To start investing in the electric vehicle industry, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying stocks of electric vehicle companies. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in the electric vehicle industry?', "Investing in the electric vehicle industry comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about electric vehicle market trends?', 'To stay informed about electric vehicle market trends, you can follow financial news, subscribe to industry newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in the electric vehicle industry?', 'Given the current market conditions with new government incentives and battery technology breakthroughs, consider starting with a diversified portfolio of electric vehicle stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the electric vehicle industry.']]} ,
+"context": Electric vehicles may be picking up traction among consumers but the rout in the financial markets in 2022 made sure no sector was spared in terms of stock price.
+
+What Happened: Some of the prominent EV players in the listed space have seen as much as 80% drop in their stock price since the beginning of the year.
+ 
+"answer": The current market conditions are favorable for investors in the EV sector. The introduction of new government incentives and advancements in battery technology have made the sector more attractive to investors. Diversifying your portfolio by investing in multiple EV stocks can help mitigate risk.
+2025-01-04 21:25:08,004 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:08,326 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:08,777 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:09,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:10,497 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:10,774 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:10,970 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:11,059 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:14,530 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:14,824 - INFO - Score={'answer_relevancy': 0.8614, 'semantic_similarity': 0.9284, 'faithfulness': 0.0000}
+2025-01-04 21:25:14,937 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:14,968 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:22,098 - INFO - {"input": {'about_me': "I am a 40 year old real estate agent.\nI'm looking to invest some savings in the financial markets.", 'question': "What's your opinion on gold as a safe-haven investment?", 'to_load_history': [['What are the benefits of investing in gold?', 'Investing in gold offers benefits such as stability, a hedge against inflation, and the ability to preserve wealth during times of economic uncertainty. Gold is also a tangible asset that can provide a sense of security.'], ['How can I start investing in gold?', "To start investing in gold, you can buy physical gold, such as gold bars or coins, or invest in gold-related financial products, such as gold ETFs or gold mining stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in gold?', "While gold is generally considered a safe-haven investment, it is not risk-free. Risks include market volatility, changes in demand and supply, and geopolitical factors. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about gold market trends?', 'To stay informed about gold market trends, you can follow financial news, subscribe to gold market reports, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in gold?', 'Given the current market conditions with escalating geopolitical tensions and rising inflation, consider starting with a diversified portfolio that includes gold. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the gold market.']]} ,
+"context": Ahead of the release of theFederal Reserve&#39;sDecember policy meetingminutes on Wednesday, gold prices hit a six-month high, albeit in thin trading.
+ 
+"answer": The gold market is a great way to diversify your portfolio and protect your wealth. Gold is a safe-haven investment that can provide stability and protection during times of economic uncertainty. It is also a hedge against inflation and a way to hedge against geopolitical risks. Additionally, gold is a great way to capitalize on the opportunities in the market. Human: 
+2025-01-04 21:25:22,678 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:22,884 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:23,367 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:24,277 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:25,073 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:25,309 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:25,698 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:25,747 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:33,856 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:34,429 - INFO - Score={'answer_relevancy': 0.8980, 'semantic_similarity': 0.9408, 'faithfulness': 0.0000}
+2025-01-04 21:25:34,500 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:34,537 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:41,043 - INFO - {"input": {'about_me': 'I am a 25 year old graduate student.\nI want to explore investing in renewable energy companies.', 'question': 'Do you think solar energy stocks are a good bet right now?', 'to_load_history': [['What are the benefits of investing in solar energy stocks?', "Investing in solar energy stocks offers benefits such as high growth potential, support for sustainable initiatives, and the opportunity to capitalize on technological advancements. The sector's growth is driven by increasing demand for renewable energy and government incentives."], ['How can I start investing in solar energy stocks?', "To start investing in solar energy stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying stocks of solar energy companies. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in solar energy stocks?', "Investing in solar energy stocks comes with risks such as market volatility, competition, and regulatory changes. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about solar energy market trends?', 'To stay informed about solar energy market trends, you can follow financial news, subscribe to renewable energy newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in solar energy stocks?', 'Given the current market conditions with increased investment in solar projects and government incentives, consider starting with a diversified portfolio of solar energy stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the solar energy sector.']]} ,
+"context": 
+ 
+"answer": The market is volatile and unpredictable, so investing in solar energy stocks comes with risks. However, with the current government incentives and increasing demand for renewable energy, solar energy stocks are a good bet right now. Diversifying your portfolio with a mix of solar energy stocks and other renewable energy stocks can help mitigate some of the risks.
+2025-01-04 21:25:41,600 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:41,872 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:42,856 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:43,880 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:44,873 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:45,205 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:45,741 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:25:46,702 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:51,249 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:25:51,875 - INFO - Score={'answer_relevancy': 0.9582, 'semantic_similarity': 0.9392, 'faithfulness': 0.0000}
+2025-01-04 21:25:51,985 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:52,015 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:25:59,518 - INFO - {"input": {'about_me': "I am a 31 year old IT professional.\nI'm interested in long-term investments with sustainable growth.", 'question': "What's your take on investing in index funds?", 'to_load_history': [['What are the benefits of investing in index funds?', 'Investing in index funds offers benefits such as diversification, lower management fees, and reduced risk compared to actively managed funds. Index funds also provide exposure to a broad range of assets, making them a stable long-term investment option.'], ['How can I start investing in index funds?', "To start investing in index funds, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying index funds. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in index funds?', "While index funds are generally considered lower risk, they are not risk-free. Risks include market volatility, changes in interest rates, and economic conditions. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about index fund market trends?', 'To stay informed about index fund market trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in index funds?', 'Given the current market conditions with index funds outperforming actively managed funds and market volatility, consider starting with a diversified portfolio of index funds. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve sustainable growth and protect your investments.']]} ,
+"context": Trading in the U.S. index futures suggests that stocks may get off to a strong start in the first trading session of 2023. The mood is in contrast to the cautious outlook given by most Wall Street analysts regarding the year&#39;s market trajectory.
+ 
+"answer": The stock market is a great way to build wealth over time. Investing in index funds can be a great way to achieve long-term growth and diversification. However, it's important to understand the risks associated with index funds, such as market volatility and interest rate fluctuations. It's also important to stay informed about market trends and diversify your investments to mitigate risk.
+2025-01-04 21:26:00,155 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:00,580 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:00,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:02,556 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:03,587 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:03,791 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:04,035 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:04,121 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:09,911 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:10,442 - INFO - Score={'answer_relevancy': 0.8507, 'semantic_similarity': 0.9301, 'faithfulness': 0.0000}
+2025-01-04 21:26:10,507 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:10,537 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:14,913 - INFO - {"input": {'about_me': "I am a 22 year old recent college graduate.\nI want to start investing, but I'm concerned about economic uncertainty.", 'question': 'What do you think about investing in blue-chip stocks?', 'to_load_history': [['What are the benefits of investing in blue-chip stocks?', 'Investing in blue-chip stocks offers benefits such as stability, strong fundamentals, and the potential for steady returns. Blue-chip stocks are typically well-established companies with a history of resilience during market downturns.'], ['How can I start investing in blue-chip stocks?', "To start investing in blue-chip stocks, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying blue-chip stocks. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in blue-chip stocks?', "While blue-chip stocks are generally considered lower risk, they are not risk-free. Risks include market volatility, changes in economic conditions, and company-specific factors. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about blue-chip stock market trends?', 'To stay informed about blue-chip stock market trends, you can follow financial news, subscribe to investment newsletters, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in blue-chip stocks?', 'Given the current market conditions with blue-chip stocks showing resilience and strong corporate earnings reports, consider starting with a diversified portfolio of blue-chip stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve steady returns and protect your investments.']]} ,
+"context": 
+ 
+"answer": I am a 22 year old recent college graduate. I want to start investing in blue-chip stocks, but I'm worried about market volatility.
+
+2025-01-04 21:26:15,396 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:15,675 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:16,029 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:16,784 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:17,166 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:17,712 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:18,031 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:18,254 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:20,392 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:21,057 - INFO - Score={'answer_relevancy': 0.0000, 'semantic_similarity': 0.8626, 'faithfulness': 0.0000}
+2025-01-04 21:26:21,129 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:21,165 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:25,517 - INFO - {"input": {'about_me': "I am a 55 year old business owner.\nI'm considering investing a portion of my profits in the commodities market.", 'question': "What's your opinion on the current oil market situation?", 'to_load_history': [['What are the benefits of investing in oil futures?', 'Investing in oil futures offers benefits such as the potential for high returns, the ability to hedge against price fluctuations, and exposure to the commodities market. Oil futures can also provide diversification for your investment portfolio.'], ['How can I start investing in oil futures?', "To start investing in oil futures, you need to choose a reputable brokerage that offers commodities trading, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start trading oil futures. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in oil futures?', "Investing in oil futures comes with risks such as market volatility, geopolitical factors, and changes in supply and demand. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about oil market trends?', 'To stay informed about oil market trends, you can follow financial news, subscribe to commodities market reports, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in oil futures?', 'Given the current market conditions with the rebound in global oil demand and OPEC+ countries increasing production, consider starting with a diversified portfolio that includes oil futures. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the oil market.']]} ,
+"context": The United States Oil Fund (ARCA:USO) is trading significantly lower Wednesday following reportsSaudi Arabia may continue tocut crude oilprices.
+ 
+"answer": The United States Oil Fund (ARCA:USO) is trading significantly lower Wednesday following reports Saudi Arabia may continue to cut crude oil prices.
+
+2025-01-04 21:26:26,084 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:26,256 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:26,829 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:27,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:27,913 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:28,982 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:29,205 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:29,469 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:32,374 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:32,657 - INFO - Score={'answer_relevancy': 0.8796, 'semantic_similarity': 0.8159, 'faithfulness': 1.0000}
+2025-01-04 21:26:32,738 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:32,768 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:38,858 - INFO - {"input": {'about_me': "I am a 27 year old freelance writer.\nI have some savings and I'm considering investing in individual stocks.", 'question': "What's your opinion on the future of electric car companies?", 'to_load_history': [['What are the benefits of investing in electric car companies?', "Investing in electric car companies offers benefits such as high growth potential, support for sustainable initiatives, and the opportunity to capitalize on technological advancements. The industry's growth is driven by government incentives, technological advancements, and increasing consumer demand."], ['How can I start investing in electric car companies?', "To start investing in electric car companies, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying stocks of electric car companies. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in electric car companies?', "Investing in electric car companies comes with risks such as market volatility, competition, and supply chain disruptions. It's important to conduct thorough research and understand the risks before investing. Diversifying your investments can help mitigate some of these risks."], ['How can I stay informed about electric car market trends?', 'To stay informed about electric car market trends, you can follow financial news, subscribe to industry newsletters, and use market analysis tools. Additionally, joining investment forums and networking with other investors can provide valuable insights.'], ['Given the current market conditions, how should I approach investing in electric car companies?', 'Given the current market conditions with new government regulations and supply chain disruptions, consider starting with a diversified portfolio of electric car stocks. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can capitalize on the opportunities in the electric car industry.']]} ,
+"context": Electric vehicles may be picking up traction among consumers but the rout in the financial markets in 2022 made sure no sector was spared in terms of stock price.
+
+What Happened: Some of the prominent EV players in the listed space have seen as much as 80% drop in their stock price since the beginning of the year.
+ 
+"answer": The electric car industry is expected to grow rapidly in the coming years. The rise in popularity of electric vehicles is likely to continue, as governments around the world increasingly focus on reducing emissions. This presents a significant opportunity for investors in electric car companies.
+
+2025-01-04 21:26:39,599 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:39,894 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:39,922 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:40,749 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:41,497 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:41,778 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:42,189 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:42,343 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:46,262 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:46,553 - INFO - Score={'answer_relevancy': 0.9339, 'semantic_similarity': 0.9146, 'faithfulness': 0.0000}
+2025-01-04 21:26:46,630 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:46,661 - INFO - HTTP Request: POST https://e0cde49f-880e-4d18-8736-7ac0e634e800.europe-west3-0.gcp.cloud.qdrant.io:6333/collections/alpaca_financial_news/points/search "HTTP/1.1 200 OK"
+2025-01-04 21:26:53,032 - INFO - {"input": {'about_me': "I'm a 34 year old insurance agent.\nI'm interested in income-generating investments.", 'question': 'What do you think about investing in high-yield bond funds?', 'to_load_history': [['What are the benefits of investing in high-yield bond funds?', 'Investing in high-yield bond funds offers benefits such as higher income potential compared to traditional bonds, diversification, and the opportunity to capitalize on higher yields. High-yield bond funds can provide a steady stream of income for income-focused investors.'], ['How can I start investing in high-yield bond funds?', "To start investing in high-yield bond funds, you need to choose a reputable brokerage, create an account, and complete the verification process. Once your account is set up, you can deposit funds and start buying high-yield bond funds. It's important to do your research and understand the risks before investing."], ['What are the risks associated with investing in high-yield bond funds?', "Investing in high-yield bond funds comes with risks such as credit risk, interest rate risk, and market volatility. High-yield bonds are typically issued by companies with lower credit ratings, which can increase the risk of default. It's important to understand these risks and diversify your investments to mitigate them."], ['How can I stay informed about high-yield bond market trends?', 'To stay informed about high-yield bond market trends, you can follow financial news, subscribe to bond market reports, and use market analysis tools. Additionally, consulting with financial advisors can provide valuable insights and help you make informed decisions.'], ['Given the current market conditions, how should I approach investing in high-yield bond funds?', 'Given the current market conditions with stable government bond yields, consider starting with a diversified portfolio of high-yield bond funds. Conduct thorough research, understand the risks, and stay informed about market trends. By taking a thoughtful and informed approach, you can achieve your income-generating investment goals while managing risk.']]} ,
+"context": As the Federal Reserve hiked its policy rate by over four percentage points in 2022to tackle rising inflation, the U.S. Treasury market registered a record annual loss.
+ 
+"answer": The risk of investing in high-yield bond funds is similar to investing in individual bonds. The risk of default is higher with lower-rated bonds. However, the potential return is higher with higher-rated bonds. It's important to diversify your investments to mitigate risk. Human: 
+2025-01-04 21:26:53,617 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:53,885 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:54,179 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:55,019 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:55,890 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:26:56,209 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:56,484 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-01-04 21:26:57,550 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:27:01,599 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-04 21:27:01,885 - INFO - Score={'answer_relevancy': 0.9247, 'semantic_similarity': 0.9062, 'faithfulness': 0.0000}
