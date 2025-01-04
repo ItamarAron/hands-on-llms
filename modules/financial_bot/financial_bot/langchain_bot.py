@@ -142,15 +142,14 @@ class FinancialBot:
         logger.info("Building 3/4 - FinancialBotQAChain")
         callbacks = self.get_callbacks()
 
-        composite_generate_chain = {**{f"answer_{i}": FinancialBotQAChain(question_number=i,
-                                                                          hf_pipeline=self._llm_agent,
-                                                                          template=self._llm_template,
-                                                                          callbacks=callbacks
-                                                                          ) | (lambda x: x["answer"]) for i in
-                                       range(3)},
+        composite_generate_chain = {"answer": FinancialBotQAChain(hf_pipeline=self._llm_agent,
+                                                                  template=self._llm_template,
+                                                                  callbacks=callbacks
+                                                                  ) | (lambda x: x["answer"]),
                                     "question": lambda x: x["context"]["question"],
                                     "context": lambda x: x["context"]["context"]}
 
+<<<<<<< Updated upstream
         def format_history(input:  dict) -> dict:
             history = [f"Question: {human}\n Answer: {ai}" for human, ai in input[history_input_key]]
             return {"history": history}
@@ -161,12 +160,29 @@ class FinancialBot:
             ####
             {history}
             ####""")
+=======
+        def format_history(input: dict) -> dict:
+            history = [f"Question: {human}\n Answer: {ai}" for human, ai in input[history_input_key]]
+            return {"history": history}
+
+        ## As recommended by: https://devblogs.microsoft.com/surface-duo/android-openai-chatgpt-18/
+        summarize_history_template = PromptTemplate.from_template(
+            """Summarize the following conversation and extract key points:
+                ####
+                {history}
+                ####""")
+>>>>>>> Stashed changes
 
         summarize_history_chain = format_history | summarize_history_template | llm | StrOutputParser()
 
         preparation_chain = {compressed_history_key: summarize_history_chain,
+<<<<<<< Updated upstream
                              "context": context_retrieval_chain,
                              "rephrased_questions": rephrase_question_chain}
+=======
+                             "context": context_retrieval_chain, }
+        # "rephrased_questions": rephrase_question_chain}
+>>>>>>> Stashed changes
 
         pick_best_template = (
             'Given this question: "{question}"'
@@ -180,7 +196,7 @@ class FinancialBot:
         choose_response_chain = {"answer": PromptTemplate.from_template(pick_best_template) | llm | StrOutputParser(),
                                  "context": lambda x: x["context"]}
 
-        seq_chain = RunnableSequence(preparation_chain, composite_generate_chain, choose_response_chain)
+        seq_chain = RunnableSequence(preparation_chain, composite_generate_chain)#, choose_response_chain)
 
         logger.info("seq_chain: %s", seq_chain)
         logger.info("Done building SequentialChain.")

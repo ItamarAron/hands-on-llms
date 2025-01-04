@@ -142,7 +142,7 @@ class ContextExtractorChain(Chain):
 class FinancialBotQAChain(Chain):
     """This custom chain handles LLM generation upon given prompt"""
 
-    question_number: int
+
     hf_pipeline: HuggingFacePipeline
     template: PromptTemplate
 
@@ -168,7 +168,11 @@ class FinancialBotQAChain(Chain):
 
         logger.info("Model inputs: %s", inputs)
 
+<<<<<<< Updated upstream
         question = inputs["rephrased_questions"]["rephrased_questions"][self.question_number]
+=======
+        question = inputs["context"]["question"]
+>>>>>>> Stashed changes
         compressed_history = inputs[compressed_history_key]
         inputs = inputs["context"]
         inputs = self.clean(inputs)
