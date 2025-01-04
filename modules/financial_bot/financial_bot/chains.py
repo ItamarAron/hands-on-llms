@@ -169,7 +169,7 @@ class FinancialBotQAChain(Chain):
         logger.info("Model inputs: %s", inputs)
 
         question = inputs["rephrased_questions"]["rephrased_questions"][self.question_number]
-        compressed_history = inputs[compressed_history_key][compressed_history_key]
+        compressed_history = inputs[compressed_history_key]
         inputs = inputs["context"]
         inputs = self.clean(inputs)
         prompt = self.template.format_infer(

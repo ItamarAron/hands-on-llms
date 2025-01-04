@@ -13,7 +13,7 @@ from financial_bot import constants
 from financial_bot.chains import (
     CompressHistoryChain,
     ContextExtractorChain,
-    FinancialBotQAChain, compressed_history_key,
+    FinancialBotQAChain, compressed_history_key, history_input_key,
 )
 from financial_bot.embeddings import EmbeddingModelSingleton
 from financial_bot.handlers import CometLLMMonitoringHandler
@@ -151,16 +151,29 @@ class FinancialBot:
                                     "question": lambda x: x["context"]["question"],
                                     "context": lambda x: x["context"]["context"]}
 
-        preparation_chain = {compressed_history_key: CompressHistoryChain(),
+        def format_history(input:  dict) -> dict:
+            history = [f"Question: {human}\n Answer: {ai}" for human, ai in input[history_input_key]]
+            return {"history": history}
+
+  ## As recommended by: https://devblogs.microsoft.com/surface-duo/android-openai-chatgpt-18/
+        summarize_history_template  = PromptTemplate.from_template(
+        """Summarize the following conversation and extract key points:
+            ####
+            {history}
+            ####""")
+
+        summarize_history_chain = format_history | summarize_history_template | llm | StrOutputParser()
+
+        preparation_chain = {compressed_history_key: summarize_history_chain,
                              "context": context_retrieval_chain,
                              "rephrased_questions": rephrase_question_chain}
 
         pick_best_template = (
             'Given this question: "{question}"'
             "From the answers below, read them carefully and choose the one that might be considered the best overall."
-            "Answer #1: {answer_0}\n"
-            "Answer #2: {answer_1}\n"
-            "Answer #3: {answer_2}\n"
+            "Answer #1:\n {answer_0}\n"
+            "Answer #2:\n {answer_1}\n"
+            "Answer #3:\n {answer_2}\n"
             "Your output should be only the text of the chosen answer and nothing else"
         )
 
