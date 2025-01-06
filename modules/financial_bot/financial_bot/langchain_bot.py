@@ -149,18 +149,6 @@ class FinancialBot:
                                     "question": lambda x: x["context"]["question"],
                                     "context": lambda x: x["context"]["context"]}
 
-<<<<<<< Updated upstream
-        def format_history(input:  dict) -> dict:
-            history = [f"Question: {human}\n Answer: {ai}" for human, ai in input[history_input_key]]
-            return {"history": history}
-
-  ## As recommended by: https://devblogs.microsoft.com/surface-duo/android-openai-chatgpt-18/
-        summarize_history_template  = PromptTemplate.from_template(
-        """Summarize the following conversation and extract key points:
-            ####
-            {history}
-            ####""")
-=======
         def format_history(input: dict) -> dict:
             history = [f"Question: {human}\n Answer: {ai}" for human, ai in input[history_input_key]]
             return {"history": history}
@@ -171,18 +159,12 @@ class FinancialBot:
                 ####
                 {history}
                 ####""")
->>>>>>> Stashed changes
 
         summarize_history_chain = format_history | summarize_history_template | llm | StrOutputParser()
 
         preparation_chain = {compressed_history_key: summarize_history_chain,
-<<<<<<< Updated upstream
-                             "context": context_retrieval_chain,
-                             "rephrased_questions": rephrase_question_chain}
-=======
                              "context": context_retrieval_chain, }
         # "rephrased_questions": rephrase_question_chain}
->>>>>>> Stashed changes
 
         pick_best_template = (
             'Given this question: "{question}"'
